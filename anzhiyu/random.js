@@ -1,3 +1,3 @@
-var posts=["2025/04/26/MAYA2026 软件安装教程/","2025/04/26/PR 2025软件分享安装教程/","2025/04/26/PS 2025软件下载安装教程/","2025/04/30/UI设计复盘/","2025/04/26/kirta 5.2.9 软件分享安装教程/"];function toRandomPost(){
+var posts=["2025/04/26/MAYA2026 软件安装教程/","2025/04/30/关于时·刻APP的UI设计开发思路思考/","2025/04/30/星途APP UI设计复盘/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
