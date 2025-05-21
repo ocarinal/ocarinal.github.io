@@ -1,0 +1,174 @@
+/* 白天网站背景 */
+#web_bg {
+    background-size: 16rem;
+    background-image: url(/img/bg.svg) !important;
+    background-repeat: initial
+}
+/* 夜间网站背景 */
+[data-theme=dark] #web_bg {
+    background-size: 100rem;
+    background-image: url(/img/bg-dark.svg) !important;
+}
+.custom-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--anzhiyu-maskbg);  /* 使用主题变量，保持一致性 */
+    font-family: "寒蝉全圆体"!important;
+}
+
+.custom-logo {
+    width: 80px;  /* 调小一点 */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.custom-signature {
+    font-size: 1.1rem;
+    color: var(--anzhiyu-fontcolor);  /* 使用主题文字颜色 */
+    margin: 8px 0 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 8px 16px;  /* 按钮更小 */
+    background: var(--anzhiyu-blue-main);  /* 使用主题蓝色 */
+    color: var(--anzhiyu-white);
+    border-radius: var(--anzhiyu-radius);  /* 使用主题圆角 */
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: var(--style-border-none);
+}
+
+.custom-btn:hover {
+    background: var(--anzhiyu-blue-hover);
+    color: var(--anzhiyu-white);
+}
+
+/* 默认隐藏，只在文章页显示 */
+#mortalcat-footer-bar {
+    display: none;
+}
+
+/* 文章页显示 */
+.post #mortalcat-footer-bar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+/* Logo容器样式 */
+#mortalcat-footer-bar .footer-logo {
+    width: 192px;
+    height: 105px;
+    margin-bottom: 4px;
+}
+
+/* Logo样式 - 亮色模式（默认） */
+#mortalcat-footer-bar .footer-logo .MortalCat {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/logo1.png);  /* 黑色logo用于亮色模式 */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Logo样式 - 暗色模式 */
+[data-theme=dark] #mortalcat-footer-bar .footer-logo .MortalCat {
+    background-image: url(/img/logo.png);  /* 白色logo用于暗色模式 */
+}
+
+/* 描述文字样式 */
+#mortalcat-footer-bar .footer-bar-description {
+    color: var(--anzhiyu-secondtext);
+    font-weight: 700;
+    margin: 2px 0;
+}
+
+/* 按钮样式 */
+#mortalcat-footer-bar a.footer-bar-link {
+    padding: 4px 16px;
+    background: var(--anzhiyu-secondbg);
+    border-radius: 20px;
+    margin-top: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: var(--style-border-always);
+    text-decoration: none;
+}
+
+/* 按钮悬停效果 */
+#mortalcat-footer-bar a.footer-bar-link:hover {
+    background: var(--anzhiyu-main-op-deep);
+    color: var(--anzhiyu-white);
+}
+
+#footer {
+    background: transparent !important;  /* 使用 !important 确保覆盖原主题样式 */
+}
+
+/* 如果还需要移除边框和阴影 */
+#footer, #footer-wrap {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* 如果底部有渐变或其他背景，也可以一并清除 */
+#footer:before {
+    background: transparent !important;
+}
+
+.gold-widget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+  
+  /* 左侧图标 + 文本 */
+  .gold-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+  }
+  
+  /* 右侧价格 + 涨跌 */
+  .gold-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+  }
+  #card-gold.card-widget {
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem 0;         /* 缩小上下间距 */
+    border-radius: 8px;       /* 可选：让它圆角小一点 */
+    font-size: 0.95rem;       /* 可选：整体字体微缩 */
+  }
