@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>设计：选择字体这件事到到底有多难？</title>
+      <link href="/posts/11243.html"/>
+      <url>/posts/11243.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="设计：选择字体这件事到到底有多难？"><a href="#设计：选择字体这件事到到底有多难？" class="headerlink" title="设计：选择字体这件事到到底有多难？"></a>设计：选择字体这件事到到底有多难？</h1><p>虽然61儿童节过了，但还是祝大家都是儿童节快乐，算祝个晚节（（<br>今天给大家分享一个我在选字体这件事的一些纠结和经验。<br>只要你做设计，你会发现一件事：<strong>字体真的很重要</strong>。<br>不是说 Arial 和 Helvetica 用哪个更高级，而是——不同的字体，会给整个页面带来完全不一样的“气质”。</p><p>我不是专业的字体设计师，但在给自己的博客、项目，选字体的过程中，真的反复纠结过很多次。今天就从一个普通设计师的角度，分享一些我选字体时的烦恼和经验。</p><hr><h2 id="1-系统字体，为什么大家都不选它？"><a href="#1-系统字体，为什么大家都不选它？" class="headerlink" title="1. 系统字体，为什么大家都不选它？"></a>1. 系统字体，为什么大家都不选它？</h2><p><img src="https://bu.dusays.com/2025/06/03/683e7c02360d7.png" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><p style="font-size: 0.95rem; text-align: center;">雅黑</p><p>Windows 下的微软雅黑、Mac 下的苹方等等，都是很优秀的字体而且兼容性强，字体无需额外加载，在各种平台上都能顺利显示，但问题在于：</p><ul><li><strong>风格相对来说比较单一</strong>：系统字体虽然中性、易读，但往往也缺乏气质。对于讲求视觉风格和独特性的设计来说，设计师更希望通过字体塑造差异化。</li><li><strong>排版风格受限</strong>：系统字体往往设计上是“通用型”的，而不是“排版友好型”。比如在设计海报、插画或专题页面时，设计师需要字体有独特的字重、装饰性、视觉冲击力，这不是系统字体能满足的。</li></ul><p>所以对于很多设计师来说，会下意识的在设计中避开使用系统自带的字体，除了上述原因还因为它太“土”了。可能说“土”有点过火了，也可以说太”普“了。</p><p>但我说心里话，抛开上述的问题 就算在可以使用系统字体的情景下，也基本不会使用系统字体，这在设计圈太常见。在品牌、视觉、UI设计中， <strong>“执着于换字体”</strong> 的冲动几乎成了某种职业病。不是系统字体不够好，而是： <strong>因为“选字体”本身成了设计存在感的证明</strong></p><ul><li><strong>系统字体可用、可控，也可美；好字体并不能掩盖设计逻辑的薄弱。</strong></li></ul><p>总的来说，我认为系统字体的使用，是一种 <strong>“设计的本能”</strong> ，而不是一种 <strong>“设计的选择”</strong>。</p><hr><h2 id="2-所以我怎么才能有更多字体的选择？"><a href="#2-所以我怎么才能有更多字体的选择？" class="headerlink" title="2.所以我怎么才能有更多字体的选择？"></a>2.所以我怎么才能有更多字体的选择？</h2><h3 id="作为刚入行的普通设计师，到底应该怎么才能有更多字体的选择？"><a href="#作为刚入行的普通设计师，到底应该怎么才能有更多字体的选择？" class="headerlink" title="作为刚入行的普通设计师，到底应该怎么才能有更多字体的选择？"></a>作为刚入行的普通设计师，到底应该怎么才能有更多字体的选择？</h3><p>入行后，我就发现了，字体这一方面付费的不一定有免费的好，而且说实话，刚工作那会儿也没那么多预算，根本买不起一堆授权，只能靠自己去找、去试。打开设计软件，字库里就那几款系统字体，做啥都觉得没感觉，像是被锁死了一样。<br>网上资源其实不少，就是得花点时间去整理。有段时间我甚至有点“穷疯了”，看到谁在用新字体就去翻网页源代码，看是哪一款，或者到处扒别人 Figma 的字体列表（笑），但是慢慢的就发现字体不是越多越好，而是你得会用、能用好。有时候一款字体我开始不喜欢，但用着用着，在某个设计里突然就“对上眼”了。到后面反而变得没那么执着了：字不一定要贵，但得合适、得能撑住你的设计。</p><p>所以现在回头看，想要“字体更多”，其实就两个事：多看、多用。资源谁都有，关键是你得知道它长啥样、适合干啥。这个过程没有捷径，但也没那么难，只要你真的喜欢做设计，就总能一点点摸出门道来。</p><p>说到这里就不得不提<a href="https://fonts.google.com/">Google Fonts</a>，这个网站，真的帮助了我太多，我现在也推荐给你。</p><p><img src="https://bu.dusays.com/2025/06/03/683e823cd5e49.png" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><p style="font-size: 0.95rem; text-align: center;">Google Fonts</p>它是一个免费的字体库，支持在线预览，并且‌Google Fonts的所有字体均为开源且免费商用‌，遵循SIL Open Font License等开源许可协议，允许用户在任何商业产品、印刷品、网站、应用等场景中使用。‌<h3 id="我印象最深并且常用的几个："><a href="#我印象最深并且常用的几个：" class="headerlink" title="我印象最深并且常用的几个："></a>我印象最深并且常用的几个：</h3><ul><li><strong>Inter</strong>：现代、干净、适合界面</li></ul><p><img src="https://bu.dusays.com/2025/06/03/683e8c016b2ae.png"></p><ul><li><strong>Poppins</strong>：圆润、可爱，用在标题里效果很好</li></ul><p><img src="https://bu.dusays.com/2025/06/03/683e8d5f19630.png"></p><ul><li><strong>Roboto</strong>：安卓系标配，不出错但稍显普通</li></ul><p><img src="https://bu.dusays.com/2025/06/03/683e8e0253bd0.png"></p><ul><li><strong>Merriweather</strong>：正文用的衬线体，阅读体验很好</li></ul><p><img src="https://bu.dusays.com/2025/06/03/683e8e3e06ebd.png"></p><ul><li><strong>Fira Code</strong>：写代码专用，看着顺眼还支持 ligature</li></ul><p><img src="https://bu.dusays.com/2025/06/03/683e8ea1ce71a.png"></p><p>你也能看出来，这些都是英文字体，关于中文字体，我单独说。</p><hr><h2 id="3-中文字体的“尴尬”选择"><a href="#3-中文字体的“尴尬”选择" class="headerlink" title="3. 中文字体的“尴尬”选择"></a>3. 中文字体的“尴尬”选择</h2><h3 id="选中文字体比英文难太多了。"><a href="#选中文字体比英文难太多了。" class="headerlink" title="选中文字体比英文难太多了。"></a>选中文字体比英文难太多了。</h3><p>选中文字体比英文难多了。这不是说没有好字体，而是好用、免费又商用安全的中文字体真的不多。而且中文字体的体量大，一个字库动辄几万字，设计师要顾及的远比英文多得多。</p><p><img src="https://bu.dusays.com/2025/06/03/683e99f9b22a3.png"></p><p style="font-size: 0.95rem; text-align: center;">使用CJK-character-count检查一款字体的以统一码（Unicode）区块与汉字编码标准统计字体内的汉字数量。</p>刚开始做中文排版时，我经常遇到一种情况：某些字体单字看着不错，但一段话排下来就觉得“怪”——有的字特别显眼，有的字又显得歪歪扭扭，整段文字看起来不协调。特别是免费字体，有些的确存在字形风格不统一的问题，一眼看过去就很难撑住设计的气质。<p>还有一个困扰我很久的点：中文字体的风格差异不明显。不像英文可以选 Serif、Sans、Monospace、Display，不同类型之间性格非常清楚；中文大部分字体就是 “黑体” 和 “宋体”，稍微有点风格的又很容易变“花哨”或者“太有个性”，实际用起来反而不适合正文。</p><p>这就导致我们在做中文界面或者长文内容的时候，选择空间其实挺窄的。你想排得有质感，不想太“工具感”，但又不能太跳脱，有时候真的是左右为难。</p><p>所以现在我用中文字体有个小经验：不轻易追求“个性”，但会努力去试“干净、稳定、有细节”的字。比如思源黑体虽然常见，但调字重、加点行距，还是能排得很好看。偶尔也会用一些风格字体来做标题，比如：</p><ul><li><p><strong>「仓耳小丸子体」</strong></p></li><li><p><strong>「得意黑」</strong></p></li><li><p><strong>「长城黑体」</strong></p></li></ul><p>这类带点温度的字体，配合正文效果会好很多。</p><p>中文字体的难，不只是资源少，更是审美判断和实际排版之间的矛盾。但我也慢慢接受了这个过程：就是得试、得看、得犯错，才知道哪个字，适合自己手下的设计。</p><p>除了各家字库像方正、汉仪、造字工房、字由等平台，经常会推出限时可用的优质字体，也有部分网站专门收录了一些免费的中文字体可以给大家推荐几个：</p><p><a href="https://www.mianfeiziti.com/">免费字体网</a>（真叫这个名）</p><p><img src="https://bu.dusays.com/2025/06/03/683e9c8f19fb0.png"></p><p><a href="https://www.maoken.com/">猫啃网</a></p><p><img src="https://bu.dusays.com/2025/06/03/683e9cfa5a25c.png"></p><p><a href="https://www.qiuziti.com/">求字体</a></p><p><img src="https://bu.dusays.com/2025/06/03/683e9d7c31571.png"></p><p>等等，还有很多网站，大家可以自行搜索。</p><hr><h2 id="4-字体搭配不试试就不知道合不合适。"><a href="#4-字体搭配不试试就不知道合不合适。" class="headerlink" title="4. 字体搭配不试试就不知道合不合适。"></a>4. 字体搭配不试试就不知道合不合适。</h2><p>其实很多字体不是看出来的，而是排出来的。你光看字体介绍或者别人用的效果图，觉得“好好看”，但换到自己项目里，可能一整页就塌了。这个时候，要真正理解“字体也需要试穿”这句话。</p><p>比如我曾经很喜欢一款标题字体，单独看又酷又有设计感，但配正文怎么都不对，要么显得头重脚轻，要么气质不搭。还有一次，我用了一款很有风格的宋体，结果在小屏设备上一下子糊成一团，完全没法看。</p><ul><li><strong>字体好不好看是一回事，合不合适才最重要。</strong></li></ul><p>字体搭配也一样——两个字都很好，不代表放在一起就适合。就像穿衣服，西装配运动鞋可能行，配皮靴也行，但你得搭过才知道是不是自己的风格。字体之间的“气质冲突”非常微妙，只有试过你才知道是不是在抢戏，还是在互相加分。</p><p>有时候一个字不一定非要换掉，可能就是加个字重、调点行高，整个排版的气质就立住了。不同粗细、大小、行距，也能制造出“层次感”，字体的好坏不在字形，而在于你有没有认真让它“穿上设计”，站在页面上说话，可以用 <a href="https://fontpair.co/">fontpair.co</a> 看别人怎么配。不实际用用只看字库是看不出来的。</p><hr><h2 id="5-你看到的“舒服”，背后很多计算"><a href="#5-你看到的“舒服”，背后很多计算" class="headerlink" title="5. 你看到的“舒服”，背后很多计算"></a>5. 你看到的“舒服”，背后很多计算</h2><p>有时候我做图，别人看完会说：“这个图看着挺舒服的。”但其实那种“舒服”，不是字体本身多高级，而是背后花了很多时间在微调。</p><p><img src="https://bu.dusays.com/2025/06/03/683ea2fce8c84.png"></p><p style="font-size: 0.95rem; text-align: center;">电商详情页常用文字排版规范。</p><p>刚入行的时候，我也以为只要把好字体用上差不多设置一下，就差不多了。可后来慢慢发现，真正的“舒服感”来自无数小细节的计算——字与字的间距，段落之间的呼吸，标题和正文的层级关系，还有不同字体之间的气场对齐。<br>比如，思源黑体这种看起来很中性、很标准的字，你不调也能用，但你要真想排得顺眼，可能就要在字重和行距上下点功夫。有些字号下它会显得太紧、有压迫感，这时候稍微松一点点就不一样了；有时候标题用得太轻，和正文一比气势就垮了，需要换成 SemiBold 才能撑住。</p><ul><li><strong>一个好的排版要比选一款好字体更为重要。</strong></li></ul><p>还有别忘了响应式设计这回事。在不同屏幕、不同分辨率下，字体的表现会有差异，你在 Figma 里看的“刚刚好”，放到真机上可能就完全变味了。做字体相关的设计时，多看几个版本，多导出几张图对比，调出那个真正“稳”的状态。</p><p>所以你说，一个页面看起来干净、舒服，是不是靠“选了一个高级字体”？可能只是一部分。更多时候，是背后那堆看不见的调整撑起来的。字体不会自动帮你把设计做好，但它会在你认真对待它的时候，给你最好的回报。</p><hr><h2 id="6-小结"><a href="#6-小结" class="headerlink" title="6. 小结"></a>6. 小结</h2><p>选字体，更像是在找“合作者”——它们能不能帮我把这个页面的气质立住？能不能和我想表达的东西对上眼？这背后没有绝对的标准，也不靠堆砌炫技，只有试过、做过、踩过坑，才会慢慢有判断力。</p><p>字体不只是工具，更是节奏、语气和情绪的一部分。而做设计这件事，本身就需要一点点地打磨、体会，才能让这些“看不见的讲究”，变成“看得见的舒服”。</p><p>所以我现在选字体的时候，更像在挑队友：<strong>你能不能帮我讲清楚这个事？</strong></p><h2 id="又写了贼多，希望大家能有所收获，虽然网站都没人来（（"><a href="#又写了贼多，希望大家能有所收获，虽然网站都没人来（（" class="headerlink" title="又写了贼多，希望大家能有所收获，虽然网站都没人来（（"></a>又写了贼多，希望大家能有所收获，虽然网站都没人来（（</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> UI设计 </tag>
+            
+            <tag> 字体设计 </tag>
+            
+            <tag> 设计经验 </tag>
+            
+            <tag> 字体选择 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>社交网络停用三周后，我对「发声」这件事的看法</title>
+      <link href="/posts/57571.html"/>
+      <url>/posts/57571.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="社交网络停用三周后，我对「发声」这件事的看法"><a href="#社交网络停用三周后，我对「发声」这件事的看法" class="headerlink" title="社交网络停用三周后，我对「发声」这件事的看法"></a>社交网络停用三周后，我对「发声」这件事的看法</h1><p>这三周，我没再打开微博、微信朋友圈，也没在任何平台发布内容。不是刻意做实验，只是那几天突然觉得，不想说话了。</p><p>过去我对「表达」这件事挺重视，觉得发出观点、参与讨论、分享日常，都是存在的一部分。但停下来的这三周，却让我对“发声”有了点不一样的感受。</p><hr><h2 id="1-不说话，不代表什么都失去了"><a href="#1-不说话，不代表什么都失去了" class="headerlink" title="1. 不说话，不代表什么都失去了"></a>1. 不说话，不代表什么都失去了</h2><p>一开始我担心：不发动态，是不是会和朋友慢慢失联？会不会错过重要信息？会不会错失某种“存在感”？但实际上，这三周我并没有错过什么特别重要的东西，反而少了很多无效信息的消耗。</p><p>更重要的是——我发现，朋友之间真正重要的联系，从来不是靠“刷存在感”维系的。发不发朋友圈，其实改变不了彼此的亲疏。</p><hr><h2 id="2-少了表达的冲动，生活反而更沉下来了"><a href="#2-少了表达的冲动，生活反而更沉下来了" class="headerlink" title="2. 少了表达的冲动，生活反而更沉下来了"></a>2. 少了表达的冲动，生活反而更沉下来了</h2><p>以前生活里很多场景都会在脑子里自动生成一个“要发的句子”：这个画面适合拍照发微博；这句话可以当朋友圈文案；甚至和朋友聊天时也会下意识保留一点“内容感”。</p><p>停下来之后，这种自我广播的机制被拆掉了，我开始更直接地感受当下，不再预设“观众”，也不着急把每件事都转化成可分享的东西。</p><p>很多想法就在脑海里晃一圈就消散了，没有留下痕迹，但我并不觉得可惜。</p><hr><h2 id="3-“发声”的意义也许没有我们以为的那么大"><a href="#3-“发声”的意义也许没有我们以为的那么大" class="headerlink" title="3. “发声”的意义也许没有我们以为的那么大"></a>3. “发声”的意义也许没有我们以为的那么大</h2><p>过去常觉得，在社交网络上保持“表达”很重要，是一种对世界的参与。但现在我开始怀疑：很多表达，其实是为了获得反馈，是为了证明“我在想事情”，或者是怕自己被遗忘。</p><p>这并不是坏事，但当我抽离出来看，很多“表达”其实是由焦虑驱动的。不是想清楚才说，而是怕沉默才说。</p><p>那种出于焦虑的发声，有时说得越多，反而越空。</p><hr><h2 id="4-不是不发声，而是学会选择什么时候说话"><a href="#4-不是不发声，而是学会选择什么时候说话" class="headerlink" title="4. 不是不发声，而是学会选择什么时候说话"></a>4. 不是不发声，而是学会选择什么时候说话</h2><p>三周后，我没有决定永远不再发布内容。我依然写东西，也依然觉得文字是一种美好的连接方式。但我想提醒自己：不需要每一件事都被“说出来”，不需要每一次沉默都被解释。</p><p>我希望下一次我在公共场域发声，是因为我真的有东西想说，而不是因为害怕沉默。</p><hr><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>社交网络不是坏东西，很多好内容和好关系也在那里发生。但它确实会慢慢影响我们说话的方式，甚至影响我们“为什么说”。</p><p>停用三周并没有让我变成更聪明或更深刻的人，但它让我意识到，「不说」有时也是一种自由。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+            <tag> 思考 </tag>
+            
+            <tag> 社交网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>胶片入坑指南：从老镜头到相机胶卷</title>
+      <link href="/posts/undefined.html"/>
+      <url>/posts/undefined.html</url>
+      
+        <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><blockquote><p>写给刚入坑、又不想止步于“复古滤镜”的朋友。</p></blockquote><hr><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li><a href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2">写在前面</a></li><li><a href="#%E4%B8%80%E4%B8%BA%E4%BB%80%E4%B9%88%E7%8E%B0%E5%9C%A8%E8%BF%98%E6%8B%8D%E8%83%B6%E5%8D%B7">一、为什么现在还拍胶卷</a></li><li><a href="#%E4%BA%8C%E8%80%81%E9%95%9C%E5%A4%B4%E7%9A%84%E9%AD%85%E5%8A%9B">二、老镜头的魅力</a></li><li><a href="#%E4%B8%89%E8%83%B6%E5%8D%B7%E7%9A%84%E7%A7%8D%E7%B1%BB%E4%B8%8E%E9%80%89%E6%8B%A9">三、胶卷的种类与选择</a></li><li><a href="#%E5%9B%9B%E7%9B%B8%E6%9C%BA%E7%B1%BB%E5%9E%8B%E4%B8%8E%E6%8E%A8%E8%8D%90">四、相机类型与推荐</a></li><li><a href="#%E4%BA%9435mm-%E4%B8%8E%E4%B8%AD%E7%94%BB%E5%B9%85">五、35mm 与中画幅</a></li><li><a href="#%E5%85%AD%E7%94%B5%E5%BD%B1%E8%83%B6%E5%8D%B7%E7%AE%80%E4%BB%8B">六、电影胶卷简介</a></li><li><a href="#%E4%B8%83%E5%86%B2%E6%89%AB%E4%B8%8E%E5%90%8E%E6%9C%9F">七、冲扫与后期</a></li><li><a href="#%E5%85%AB%E4%B8%80%E7%82%B9%E7%82%B9%E5%BB%BA%E8%AE%AE">八、一点点建议</a></li></ul><hr><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>开始拍胶卷是挺自然的事，——小时候家里每年春节都会拍，小时候对这个还不感兴趣，到后来翻到爸妈以前的底片盒子，开始好奇那时候的人是怎么记录生活的。</p><p>一开始我对相机和胶卷的了解不深，但真正买下第一卷 Gold 200，拿着相机在大太阳底下练曝光，最后送洗拿回一卷色调温和、焦点飘忽的片子后，才明白这玩意的质感真的是太棒了。</p><p>它不是为了“好看”，它是一种过程，一种跟照片之间的关系。</p><hr><h2 id="一、为什么现在还拍胶卷"><a href="#一、为什么现在还拍胶卷" class="headerlink" title="一、为什么现在还拍胶卷"></a>一、为什么现在还拍胶卷</h2><h3 id="胶片不是为了“复古”"><a href="#胶片不是为了“复古”" class="headerlink" title="胶片不是为了“复古”"></a>胶片不是为了“复古”</h3><p>很多人把胶片等同于“有味道”，但味道是拍出来的，不是胶卷天生带的滤镜。用胶卷拍照最大的不同，其实是它强迫你慢下来、思考、等待。</p><p>拍照不再是「啪」一下的即时满足，而是：</p><ul><li>一张胶卷要想好几秒才敢按快门</li><li>一个场景会想一遍光线、一次性构图、再回头确认对焦</li><li>拍完还得等几天才知道自己拍成什么样</li></ul><p>这个过程跟用手机随手一拍完全不同。你会记得那一天的光、那一卷的气味，甚至是哪一次冲扫出了划痕。</p><h3 id="胶片不完美，但它完整"><a href="#胶片不完美，但它完整" class="headerlink" title="胶片不完美，但它完整"></a>胶片不完美，但它完整</h3><p>胶片有它的问题：贵、慢、不确定。可它记录下来的，不只是画面，而是你按快门那一刻的全部选择——光圈、快门、构图，还有那天你站在哪里，为什么会站在那里。</p><hr><h2 id="二、老镜头的魅力"><a href="#二、老镜头的魅力" class="headerlink" title="二、老镜头的魅力"></a>二、老镜头的魅力</h2><h3 id="成像不完美，才有意思"><a href="#成像不完美，才有意思" class="headerlink" title="成像不完美，才有意思"></a>成像不完美，才有意思</h3><p>我最早用的是一只 奥林巴斯 55mm f&#x2F;1.8，手动对焦，光圈环转起来有点咔哒咔哒，质感非常好，拍出来的照片有种「温吞」的质感，像是在说话而不是展示。</p><p>老镜头不是用来“替代现代镜头”的，它本身就是一种语言：</p><ul><li>焦外可能有些乱，但更有层次感</li><li>逆光下可能会鬼影重重，但氛围就在那里</li><li>画面不一定锐，但眼神会被拉住</li></ul><p>你会学着用它的缺点拍出画面，而不是只用优点炫技。</p><h3 id="几个有印象的老镜头"><a href="#几个有印象的老镜头" class="headerlink" title="几个有印象的老镜头"></a>几个有印象的老镜头</h3><table><thead><tr><th>镜头</th><th>特色</th><th>我的体会</th></tr></thead><tbody><tr><td>Super-Takumar 55&#x2F;1.8</td><td>柔和，有暖色镀膜</td><td>人像非常耐看，尤其是自然光下</td></tr><tr><td>Helios 44-2 58&#x2F;2</td><td>旋转焦外、色散强烈</td><td>拍花花草草有种梦境感，但对焦要小心</td></tr><tr><td>Canon FD 50&#x2F;1.4</td><td>典型双高斯，锐利</td><td>日常街拍首选，抗光性一般</td></tr><tr><td>Carl Zeiss Sonnar 135&#x2F;3.5</td><td>结实、油润、厚重</td><td>適合拍远景和建筑，压缩感十足</td></tr></tbody></table><p>镜头不是“参数的总和”，而是你怎么用它讲故事。</p><hr><h2 id="三、胶卷的种类与选择"><a href="#三、胶卷的种类与选择" class="headerlink" title="三、胶卷的种类与选择"></a>三、胶卷的种类与选择</h2><p>一开始我Gold拍了4卷，后来其他的卷越用越多，才发现胶卷跟镜头一样，是“口味”的问题。</p><h3 id="彩色负片（C-41）"><a href="#彩色负片（C-41）" class="headerlink" title="彩色负片（C-41）"></a>彩色负片（C-41）</h3><p><strong>最适合日常使用</strong>，宽容度大，曝光稍微偏一点也能救回来。</p><ul><li><strong>ColorPlus 200</strong>：对光线要求不高，色彩温和。拍家人、街头都舒服。</li><li><strong>Gold 200</strong>：比 ColorPlus 更细腻一些，室外人像不错。</li><li><strong>Ultramax 400</strong>：颗粒比前两者粗，但应对阴天或者室内很实用。</li><li><strong>Portra 系列</strong>：Portra 160 非常稳，但不讨好光线下略显“平”；Portra 400 是万能选手，几乎不会出错。</li></ul><p>有次我在冬天拍 Gold200，阴天、冷色调，人像出来整体偏黄，后悔没上 Portra 400。也是这次后我才意识到，胶卷是“选对光”而不是“修照片”。</p><h3 id="黑白负片"><a href="#黑白负片" class="headerlink" title="黑白负片"></a>黑白负片</h3><p>黑白片最能看出摄影的基本功：光线、构图、层次。</p><ul><li><strong>Ilford HP5+</strong>：宽容度极大，曝光出错也有得救。</li><li><strong>Tri-X 400</strong>：颗粒感强，适合街拍，有种历史感。</li><li><strong>Fomapan 100</strong>：价格便宜，适合练手，但动态范围小一点。</li></ul><p>黑白片是我最常用来“压心情”的选择，一卷走下来，会回忆起那段时间的思绪。</p><h3 id="反转片（E-6）"><a href="#反转片（E-6）" class="headerlink" title="反转片（E-6）"></a>反转片（E-6）</h3><p>我反转拍的很少，反转片颜色艳丽、细节极强，但宽容度极低。拍不好就是废片。（主要是很贵）。。</p><ul><li><strong>Velvia 50</strong>：颜色堪比滤镜，但必须阳光充足。</li><li><strong>Ektachrome E100</strong>：平衡感好一些，适合风景。</li></ul><p>建议入门先别碰反转片，等对测光和光线有信心了再尝试。</p><hr><h2 id="四、相机类型与推荐"><a href="#四、相机类型与推荐" class="headerlink" title="四、相机类型与推荐"></a>四、相机类型与推荐</h2><p>很多人刚入坑就纠结相机型号，我的建议是先看自己喜欢哪种“拍摄方式”：</p><h3 id="傻瓜机：随手快拍"><a href="#傻瓜机：随手快拍" class="headerlink" title="傻瓜机：随手快拍"></a>傻瓜机：随手快拍</h3><p>傻瓜式相机，其实没有什么多说的。拿起来就能拍，适合快节奏的街拍 光圈快门之类的估计你也调整不了，泛焦找准距离按下去就是了，一般来说都很便宜（当然也有贵的），一次性的也可以尝试。可玩性也有，但是要认真拍还是不太推荐。</p><p>推荐几款：</p><ul><li>Olympus Mju-II：小巧，镜头锐利，但贵。</li><li>Nikon L35AF：胶片自动对焦鼻祖，成像稳。</li><li>Canon Autoboy 系列：质量好，便宜耐用。</li></ul><h3 id="手动旁轴：安静克制"><a href="#手动旁轴：安静克制" class="headerlink" title="手动旁轴：安静克制"></a>手动旁轴：安静克制</h3><p>我玩过一段时间 Canonet QL17 GIII，体积小、快门声轻，拍陌生人不会太吓人。</p><p>缺点是对焦方式需要练，尤其拍近距离人物时，容易跑焦。</p><h3 id="单反（SLR）：全面掌控"><a href="#单反（SLR）：全面掌控" class="headerlink" title="单反（SLR）：全面掌控"></a>单反（SLR）：全面掌控</h3><p>这类相机用起来最像数码机。你看到的就是成像画面，换镜头、调光圈、调快门，样样都有得玩。</p><ul><li>Nikon FM2 &#x2F; FE2：经典耐用，F 卡口镜头便宜丰富。</li><li>Canon AE-1：电子快门，但易上手。</li><li>Pentax K1000：学生机，朴实无华。</li></ul><hr><h2 id="五、35mm-与中画幅"><a href="#五、35mm-与中画幅" class="headerlink" title="五、35mm 与中画幅"></a>五、35mm 与中画幅</h2><p>我玩了一段时间 135 格式之后，开始眼馋 120 中画幅。</p><h3 id="135（35mm）：机动性强"><a href="#135（35mm）：机动性强" class="headerlink" title="135（35mm）：机动性强"></a>135（35mm）：机动性强</h3><ul><li>每卷 36 张，可以多拍几种构图</li><li>胶卷选择丰富</li><li>适合随拍、练习</li></ul><h3 id="120-中画幅：画质的沉默力量"><a href="#120-中画幅：画质的沉默力量" class="headerlink" title="120 中画幅：画质的沉默力量"></a>120 中画幅：画质的沉默力量</h3><ul><li>每卷只有 10～15 张，但画质明显提升</li><li>动态范围、景深控制都有明显优势</li><li>不适合快节奏街拍，适合静下心拍人像、风景</li></ul><p>我第一次看到中画幅是相机店里的 Yashica Mat 124G，后来又接触了 Mamiya RB67，那个“咔哒——啪”的快门声，每次都像敲个鼓一样爽。</p><table><thead><tr><th>画幅</th><th>每卷张数</th><th>画质体验</th></tr></thead><tbody><tr><td>6×4.5</td><td>15–16 张</td><td>小中画幅，机身相对轻</td></tr><tr><td>6×6</td><td>12 张</td><td>方片子适合正中构图</td></tr><tr><td>6×7</td><td>10 张</td><td>非常适合人像，质感丰富</td></tr><tr><td>6×9</td><td>8 张</td><td>风光利器，但机身笨重</td></tr></tbody></table><hr><h2 id="六、电影胶卷简介"><a href="#六、电影胶卷简介" class="headerlink" title="六、电影胶卷简介"></a>六、电影胶卷简介</h2><p>很多人不知道 CineStill 是怎么来的，其实它原本是 Kodak 拍电影用的 Vision3 胶卷。</p><h3 id="Vision3-原始胶片"><a href="#Vision3-原始胶片" class="headerlink" title="Vision3 原始胶片"></a>Vision3 原始胶片</h3><ul><li><strong>Vision3 200T &#x2F; 250D &#x2F; 500T</strong>：<ul><li>T &#x3D; 钨丝灯光环境（室内偏暖）</li><li>D &#x3D; 日光色温</li></ul></li><li>胶卷带有 Remjet 胶层，防静电防刮</li></ul><p>这类胶片宽容度极高，我用 500T 拍过夜景，欠曝一档都能救回来，色彩还非常自然。</p><h3 id="CineStill：去掉-Remjet-后的改装品"><a href="#CineStill：去掉-Remjet-后的改装品" class="headerlink" title="CineStill：去掉 Remjet 后的改装品"></a>CineStill：去掉 Remjet 后的改装品</h3><ul><li>CineStill 800T &#x2F; 50D 本质上是 Vision3 去掉 Remjet 胶层，改为可用 C-41 冲洗</li><li>缺点是会出现“光晕效应”（Halation），但也成了它的“风格”</li></ul><p>CineStill 800T 拍霓虹、夜街特别合适。我拍过一组深夜便利店的照片，那种反光灯打在人物轮廓上的红晕，非常有电影感。</p><h3 id="ECN-2-与冲洗问题"><a href="#ECN-2-与冲洗问题" class="headerlink" title="ECN-2 与冲洗问题"></a>ECN-2 与冲洗问题</h3><ul><li>原版 Vision3 胶片需要 ECN-2 冲洗，有专用药液</li><li>自己冲洗难度大，大多数人是送给工作室做</li></ul><hr><h2 id="七、冲扫与后期"><a href="#七、冲扫与后期" class="headerlink" title="七、冲扫与后期"></a>七、冲扫与后期</h2><p>拍完胶卷，只完成了一半的工作，另一半交给冲扫。</p><h3 id="冲洗流程"><a href="#冲洗流程" class="headerlink" title="冲洗流程"></a>冲洗流程</h3><ul><li><strong>彩负（C-41）</strong>：通用流程，大多数胶卷支持</li><li><strong>黑白（B&amp;W）</strong>：可以自冲，成本低</li><li><strong>反转片（E-6）</strong>：最贵最复杂</li><li><strong>电影卷（ECN-2）</strong>：专业冲洗，我们这里甚至都要发出去才能冲扫</li></ul><h3 id="扫描分辨率"><a href="#扫描分辨率" class="headerlink" title="扫描分辨率"></a>扫描分辨率</h3><p>我一开始用普通扫描，大约 3000px 就够用社交平台。但拍得满意的照片，后来就会请工作室高分扫描，方便后续调色或打印。</p><h3 id="后期建议"><a href="#后期建议" class="headerlink" title="后期建议"></a>后期建议</h3><p>胶卷也能调色，但不建议“数码化”去调：</p><ul><li>黑白片建议加强对比，压暗部细节</li><li>彩色片建议保留其本来的色温倾向，调整太多容易失真</li><li>推荐软件：Lightroom + Negative Lab Pro</li></ul><hr><h2 id="八、一点点建议"><a href="#八、一点点建议" class="headerlink" title="八、一点点建议"></a>八、一点点建议</h2><ul><li>不要急着买机器，<strong>先用简单的设备拍够三卷</strong>，再想是否要升级</li><li>胶片也能出废片，那些没对好焦、测光失败、重曝的照片也是经验</li><li><strong>先拍得稳，再拍得风格化</strong></li><li>相机再贵，<strong>不如一卷拍得投入</strong></li></ul><hr><p>拍胶卷，不是为了模仿旧时代，而是为了和照片重新建立一种慢下来的关系。<br>它没有告诉你“应该怎么拍”，它反而逼你回答：“你为什么按下了这一张快门？”</p><hr><p><em>本文出自个人经历整理，不构成绝对标准，欢迎交流与指正。</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 胶片摄影 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>无线电入门这半年：从“听天上的声音”开始</title>
+      <link href="/posts/14016.html"/>
+      <url>/posts/14016.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="无线电入门这半年：从“听天上的声音”开始"><a href="#无线电入门这半年：从“听天上的声音”开始" class="headerlink" title="无线电入门这半年：从“听天上的声音”开始"></a>无线电入门这半年：从“听天上的声音”开始</h1><p>起初接触无线电，并不是为了“通信”或者“备灾”这种正经理由。更准确点说，是被某次深夜刷视频时，看到一位博主用一根天线，收到远在几千公里外的电台节目，甚至还能接到气象卫星传回来的图像，那一刻我心里咯噔一下：这玩意也太酷了吧。</p><p>说不上来那是什么感觉，大概就像你知道这个世界很复杂，但有一天你突然意识到，原来你身边这片天空，正在悄悄流动着各种各样的信息流，只是你一直听不见、看不到。</p><p>于是我开始慢慢玩了起来，没想到一头扎进来就是半年。这篇文章，想聊聊我一路的体验、踩过的坑，还有一些能让你少走弯路的干货。如果你也对无线电感兴趣，这篇也许是个不错的起点。</p><hr><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li><a href="#01%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BC%80%E5%A7%8B%E7%8E%A9%E6%97%A0%E7%BA%BF%E7%94%B5">01｜为什么开始玩无线电？</a></li><li><a href="#02%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E5%8F%B0%E8%AE%BE%E5%A4%87rtl-sdr-v3">02｜我的第一台设备：RTL-SDR V3</a></li><li><a href="#03%E4%B8%80%E5%BC%80%E5%A7%8B%E8%83%BD%E5%90%AC%E5%88%B0%E4%BB%80%E4%B9%88">03｜一开始能听到什么？</a></li><li><a href="#04%E8%BD%AF%E4%BB%B6%E6%97%A0%E7%BA%BF%E7%94%B5%E7%9C%9F%E7%9A%84%E8%83%BD%E5%90%AC%E5%BE%88%E5%A4%9A%E5%BE%88%E5%A4%9A">04｜软件无线电真的能听“很多很多”</a></li><li><a href="#05%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E5%86%B3%E5%AE%9A%E7%BB%A7%E7%BB%AD%E6%B7%B1%E5%85%A5">05｜我为什么决定继续深入？</a></li><li><a href="#06%E6%97%A0%E7%BA%BF%E7%94%B5%E4%B8%96%E7%95%8C%E6%AF%94%E6%88%91%E6%83%B3%E8%B1%A1%E7%9A%84%E6%9C%89%E8%B6%A3%E5%BE%97%E5%A4%9A">06｜无线电世界，比我想象的有趣得多</a></li><li><a href="#07%E5%A6%82%E6%9E%9C%E4%BD%A0%E4%B9%9F%E6%83%B3%E8%AF%95%E8%AF%95%E5%87%A0%E7%82%B9%E5%BB%BA%E8%AE%AE">07｜如果你也想试试，几点建议</a></li><li><a href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E">写在最后</a></li></ul><hr><h2 id="01｜为什么开始玩无线电？"><a href="#01｜为什么开始玩无线电？" class="headerlink" title="01｜为什么开始玩无线电？"></a>01｜为什么开始玩无线电？</h2><p>我平时对电子产品、通讯协议这些本就挺感兴趣，一直对“数据是怎么跑起来的”有些好奇心。但无线电之前，在我心里一直是“老一辈玩意儿”，或者和对讲机、收音机挂钩的东西，没想到如今还能玩成一套生态体系。</p><p>真正让我上头的是 <strong>SDR（软件无线电）</strong> 这个概念：一根天线插电脑，装个软件，屏幕上就能看到满满的频谱数据流，点哪听哪。那种“空气中有声音”的感觉特别真实，跟看源码、抓包一样过瘾，但比起电脑上的抓包，这种是<strong>真实的物理信号</strong>，从天上落到你手里。</p><p>而且关键是：<strong>入门门槛不高</strong>。你不用一上来就买几千块的设备，几十块钱就能开个头。</p><hr><h2 id="02｜我的第一台设备：RTL-SDR-V3"><a href="#02｜我的第一台设备：RTL-SDR-V3" class="headerlink" title="02｜我的第一台设备：RTL-SDR V3"></a>02｜我的第一台设备：RTL-SDR V3</h2><p>推荐每个新手入门都从这个玩起。RTL-SDR 是一款 USB 接收棒，本质上是数字电视接收器被“黑”成了通用射频接收机，支持 500kHz 到 1.7GHz 的频段，<strong>只接收，不发射</strong>。</p><p>淘宝上几十块钱就能买到整套（含简易天线），我用的是最基础的 V3 版，加了一根 5米长的线拉到窗边，效果其实就已经不错了。</p><p>配合的软件我用过几个：</p><ul><li><strong>SDR#（SDRSharp）</strong>：界面友好，适合新手上手；</li><li><strong>HDSDR</strong>：稍微复杂一些，但功能很强；</li><li><strong>GQRX（Linux下的选择）</strong>；</li><li><strong>SDR++</strong>：跨平台，很轻量，后来我常用这个。</li></ul><p>只要设备插上电脑，驱动装好，频谱一开——你就能看到“天上的声音”是怎么流动的了。</p><hr><h2 id="03｜一开始能听到什么？"><a href="#03｜一开始能听到什么？" class="headerlink" title="03｜一开始能听到什么？"></a>03｜一开始能听到什么？</h2><h3 id="🔹-FM广播（87-108MHz）"><a href="#🔹-FM广播（87-108MHz）" class="headerlink" title="🔹 FM广播（87~108MHz）"></a>🔹 FM广播（87~108MHz）</h3><p>最容易听，验证设备是否正常的第一步。</p><h3 id="🔹-航空频率（118-136MHz）"><a href="#🔹-航空频率（118-136MHz）" class="headerlink" title="🔹 航空频率（118~136MHz）"></a>🔹 航空频率（118~136MHz）</h3><p>民航调度频率，语速快但很上头。</p><h3 id="🔹-ADS-B（1090MHz）"><a href="#🔹-ADS-B（1090MHz）" class="headerlink" title="🔹 ADS-B（1090MHz）"></a>🔹 ADS-B（1090MHz）</h3><p>配合 <code>dump1090</code> 软件做简易雷达，能看到天上飞机飞哪了。</p><h3 id="🔹-NOAA-气象卫星（137MHz）"><a href="#🔹-NOAA-气象卫星（137MHz）" class="headerlink" title="🔹 NOAA 气象卫星（137MHz）"></a>🔹 NOAA 气象卫星（137MHz）</h3><p>能收美国气象卫星下行的云图，成就感拉满。</p><h3 id="🔹-433MHz-各类生活信号"><a href="#🔹-433MHz-各类生活信号" class="headerlink" title="🔹 433MHz 各类生活信号"></a>🔹 433MHz 各类生活信号</h3><p>无线遥控器、气象站、快递柜等等，很多都在这个频段。</p><h3 id="🔹-短波电台（SW）"><a href="#🔹-短波电台（SW）" class="headerlink" title="🔹 短波电台（SW）"></a>🔹 短波电台（SW）</h3><p>晚上效果好，能收到海外广播，有种“偷听世界”的感觉。</p><hr><h2 id="04｜软件无线电真的能听“很多很多”"><a href="#04｜软件无线电真的能听“很多很多”" class="headerlink" title="04｜软件无线电真的能听“很多很多”"></a>04｜软件无线电真的能听“很多很多”</h2><p>你可以把 SDR 看成一个“全频段监听器”，你转哪它听哪，当然前提是你用对了模式（AM&#x2F;FM&#x2F;USB&#x2F;LSB）和频率。</p><p>推荐的做法：</p><ul><li>多查资料：知道常见信号在哪些频段；</li><li>加群看老玩家怎么说；</li><li>试试在线 SDR：<ul><li><a href="https://www.rtl-sdr.com/">https://www.rtl-sdr.com/</a></li><li><a href="https://websdr.org/">https://websdr.org/</a></li><li><a href="https://sdr.hu/">https://sdr.hu/</a>（已迁移，部分可用）</li></ul></li></ul><hr><h2 id="05｜我为什么决定继续深入？"><a href="#05｜我为什么决定继续深入？" class="headerlink" title="05｜我为什么决定继续深入？"></a>05｜我为什么决定继续深入？</h2><p>接收玩久了，自然想自己“发发看”。但发射涉及到 <strong>频谱安全和合法性</strong>，需要：</p><ol><li>参加操作证考试；</li><li>申请工信部颁发的呼号；</li><li>获批后才能合法发射。</li></ol><p>我目前还在准备考试，同时研究 V段&#x2F;U段对讲机、HF 段短波设备，为之后做准备。</p><hr><h2 id="06｜无线电世界比我想象的有趣得多"><a href="#06｜无线电世界比我想象的有趣得多" class="headerlink" title="06｜无线电世界比我想象的有趣得多"></a>06｜无线电世界比我想象的有趣得多</h2><p>无线电不是“老掉牙的玩意”，而是一种自由的通信方式。</p><ul><li>它不依赖网络中心；</li><li>可以点对点通联；</li><li>是灾难中的备份通信手段；</li><li>还能让你听天听地听人声；</li><li>更是一种纯粹的“工程感兴趣”。</li></ul><hr><h2 id="07｜如果你也想试试，几点建议"><a href="#07｜如果你也想试试，几点建议" class="headerlink" title="07｜如果你也想试试，几点建议"></a>07｜如果你也想试试，几点建议</h2><ol><li><strong>从 RTL-SDR 开始</strong>，别一上来就买对讲机；</li><li><strong>先听再发</strong>，熟悉信号生态；</li><li><strong>多加群多交流</strong>，老玩家是宝藏；</li><li><strong>别违规发射</strong>，考证才是正道；</li><li><strong>动手玩天线、滤波器等周边</strong>，很提升理解；</li><li><strong>保持兴趣，不急于“成果”</strong>，它是长期陪伴型爱好。</li></ol><hr><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>这半年玩无线电，不算精通，也没什么炫酷设备，但我越来越觉得这不是一个“死宅的玩具”，也不是“老头乐”，它是一种非常实在的技术爱好，一种和世界沟通的方式。</p><p>你可能不会天天打开它，但在某些时候，它会提醒你：我们的世界，原来不止眼前的 WiFi 和手机信号塔，还有天上那些你一直没留意的、永远在说话的声音。</p><hr><p>如果你看到这儿，对这个方向感兴趣了，那说明你已经入坑了，欢迎一块玩。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 无线电 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用 GitHub Actions 实现自动部署流程：我的博客是怎么部署的</title>
+      <link href="/posts/32964.html"/>
+      <url>/posts/32964.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="用-GitHub-Actions-实现自动部署流程：我的博客是怎么部署的"><a href="#用-GitHub-Actions-实现自动部署流程：我的博客是怎么部署的" class="headerlink" title="用 GitHub Actions 实现自动部署流程：我的博客是怎么部署的"></a>用 GitHub Actions 实现自动部署流程：我的博客是怎么部署的</h1><p>过去我用 Hexo 写博客，每次更新都要本地执行 <code>hexo g &amp;&amp; hexo d</code>，手动 push 到两个仓库（一个是源码，一个是部署）。虽然操作不复杂，但每次更新都要打开终端，稍微有点麻烦。后来，我用 GitHub Actions 搭了一套自动部署流程，只需要在 Qexo 面板里发布文章，博客页面就能自动更新，省心不少。</p><p>这篇文章就记录一下我整个部署流程的设置，主要包括：</p><ul><li>仓库结构规划</li><li>Actions 配置流程</li><li>实践中的注意事项和坑</li></ul><hr><h2 id="1-仓库结构"><a href="#1-仓库结构" class="headerlink" title="1. 仓库结构"></a>1. 仓库结构</h2><p>我把博客分成两个 GitHub 仓库：</p><ul><li><code>hexo-source</code>：存放 Hexo 源码（markdown、主题等）</li><li><code>hexo-blog</code>：部署仓库，用来托管生成后的静态页面（GitHub Pages）</li></ul><p>这样一来，源码和部署内容隔离，部署仓库是纯 HTML，可以直接作为 GitHub Pages 的目标。</p><hr><h2 id="2-编写-GitHub-Actions-流程"><a href="#2-编写-GitHub-Actions-流程" class="headerlink" title="2. 编写 GitHub Actions 流程"></a>2. 编写 GitHub Actions 流程</h2><p>在 <code>hexo-source</code> 仓库中，创建 <code>.github/workflows/deploy.yml</code>，配置如下：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Hexo</span> <span class="string">Blog</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span> [<span class="string">main</span>]</span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build-and-deploy:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Clone</span> <span class="string">source</span></span><br><span class="line">      <span class="attr">uses:</span> <span class="string">actions/checkout@v3</span></span><br><span class="line"></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Setup</span> <span class="string">Node.js</span></span><br><span class="line">      <span class="attr">uses:</span> <span class="string">actions/setup-node@v3</span></span><br><span class="line">      <span class="attr">with:</span></span><br><span class="line">        <span class="attr">node-version:</span> <span class="number">18</span></span><br><span class="line"></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Cache</span> <span class="string">node_modules</span></span><br><span class="line">      <span class="attr">uses:</span> <span class="string">actions/cache@v3</span></span><br><span class="line">      <span class="attr">with:</span></span><br><span class="line">        <span class="attr">path:</span> <span class="string">node_modules</span></span><br><span class="line">        <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-npm-$&#123;&#123;</span> <span class="string">hashFiles(&#x27;**/package-lock.json&#x27;)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">        <span class="attr">restore-keys:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          $&#123;&#123; runner.os &#125;&#125;-npm-</span></span><br><span class="line"><span class="string"></span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">Dependencies</span></span><br><span class="line">      <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line"></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Generate</span> <span class="string">Static</span> <span class="string">Files</span></span><br><span class="line">      <span class="attr">run:</span> <span class="string">npx</span> <span class="string">hexo</span> <span class="string">generate</span></span><br><span class="line"></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">to</span> <span class="string">GitHub</span> <span class="string">Pages</span></span><br><span class="line">      <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">      <span class="attr">with:</span></span><br><span class="line">        <span class="attr">github_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">        <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br><span class="line">        <span class="attr">publish_branch:</span> <span class="string">main</span>  <span class="comment"># 部署仓库的默认分支</span></span><br><span class="line">        <span class="attr">external_repository:</span> <span class="string">your-username/hexo-blog</span></span><br></pre></td></tr></table></figure><p>其中 <code>external_repository</code> 需要替换成你的部署仓库名。</p><hr><h2 id="3-部署仓库设置"><a href="#3-部署仓库设置" class="headerlink" title="3. 部署仓库设置"></a>3. 部署仓库设置</h2><p>你的 <code>hexo-blog</code> 仓库需要：</p><ul><li>设置默认分支为 <code>main</code>（或你设定的其他部署分支）</li><li>开启 GitHub Pages，指定来源为 <code>main</code> 分支根目录</li></ul><hr><h2 id="4-实际效果"><a href="#4-实际效果" class="headerlink" title="4. 实际效果"></a>4. 实际效果</h2><p>现在，当我在 <code>hexo-source</code> 仓库的 <code>main</code> 分支 push 文章更新时：</p><ol><li>GitHub Actions 会自动拉取代码</li><li>安装依赖并执行 <code>hexo generate</code></li><li>自动将 <code>public</code> 目录内容发布到 <code>hexo-blog</code></li></ol><p>整个过程不需要我本地操作，基本等同于运行了 <code>hexo g &amp;&amp; hexo d</code> 并 push 到部署仓库。</p><hr><h2 id="5-注意事项和小建议"><a href="#5-注意事项和小建议" class="headerlink" title="5. 注意事项和小建议"></a>5. 注意事项和小建议</h2><ul><li>🔒 <strong>不要把 <code>node_modules</code> 和 <code>.deploy_git</code> 目录提交进源码仓库</strong></li><li>✅ 安装 Hexo 推荐用 <code>npx hexo</code> 而不是全局安装</li><li>⚠️ <code>deploy.yml</code> 中路径、分支名要严格对应</li><li>🔄 可以结合 Qexo 或其他写作平台，用 Webhook 触发 Actions 更新</li><li>💬 日志调试很重要，Actions 执行失败要及时查看具体错误</li></ul><hr><h2 id="6-小结"><a href="#6-小结" class="headerlink" title="6. 小结"></a>6. 小结</h2><p>从手动部署到全自动部署，虽然配置过程有点繁琐，但一旦跑通之后非常省心。对于像我这样喜欢写点东西，又不想每次都手动部署的人来说，GitHub Actions 的 CI&#x2F;CD 能力就是刚需。</p><p>你可以参考这套方式部署自己的博客，或者按需修改适配其他静态站点生成器（如 Hugo、VuePress、Astro 等）。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GitHub Actions </tag>
+            
+            <tag> 自动部署 </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> CI/CD </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客的全流程技术方案</title>
+      <link href="/posts/17021.html"/>
+      <url>/posts/17021.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="搭建个人博客的全流程技术方案"><a href="#搭建个人博客的全流程技术方案" class="headerlink" title="搭建个人博客的全流程技术方案"></a>搭建个人博客的全流程技术方案</h1><p>搭建一个个人博客并不复杂，但想搭得舒服、用得顺手，还要兼顾管理、写作体验和自动部署，就需要一套清晰完整的技术方案。本文结合我自己从 0 到 1 的博客搭建经验，记录一次完整的静态博客搭建过程，包括选型、部署、自动化和写作体验优化等内容，简单写写供大家参考。</p><hr><h2 id="1-博客系统选型"><a href="#1-博客系统选型" class="headerlink" title="1. 博客系统选型"></a>1. 博客系统选型</h2><p>静态博客生成器有很多选择，比如：</p><ul><li>Hexo（我选用的）</li><li>Hugo</li><li>Jekyll</li><li>Astro（新潮但稍重）</li></ul><p>我最终选择了 <strong>Hexo</strong>，原因主要是：</p><ul><li>生态成熟，插件多，主题丰富</li><li>上手门槛不高，Node.js 技术栈也比较熟</li><li>与 GitHub Pages 配合流畅</li></ul><hr><h2 id="2-基础环境准备"><a href="#2-基础环境准备" class="headerlink" title="2. 基础环境准备"></a>2. 基础环境准备</h2><h3 id="安装依赖工具"><a href="#安装依赖工具" class="headerlink" title="安装依赖工具"></a>安装依赖工具</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 Node.js（推荐使用 nvm 管理）</span></span><br><span class="line">nvm install 18</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 hexo-cli</span></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><hr><h2 id="3-初始化博客项目"><a href="#3-初始化博客项目" class="headerlink" title="3. 初始化博客项目"></a>3. 初始化博客项目</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>初始化后，目录结构如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">my-blog/</span><br><span class="line">├── _config.yml         # 全局配置</span><br><span class="line">├── source/             # 存放文章与页面内容</span><br><span class="line">├── themes/             # 主题目录</span><br><span class="line">└── public/             # 生成后的静态页面</span><br></pre></td></tr></table></figure><hr><h2 id="4-主题选择与美化"><a href="#4-主题选择与美化" class="headerlink" title="4. 主题选择与美化"></a>4. 主题选择与美化</h2><p>我选用了 <a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a> 主题，颜值高且功能强。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/jerryc127/hexo-theme-butterfly.git butterfly</span><br></pre></td></tr></table></figure><p>然后在 <code>_config.yml</code> 里设置 <code>theme: butterfly</code>。</p><p>接着根据主题文档配置菜单、社交图标、评论、代码高亮、暗色模式等内容。</p><hr><h2 id="5-本地预览与发布"><a href="#5-本地预览与发布" class="headerlink" title="5. 本地预览与发布"></a>5. 本地预览与发布</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 本地预览</span></span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态页面</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure><p>生成的页面会放在 <code>public/</code> 目录下。</p><hr><h2 id="6-GitHub-仓库部署"><a href="#6-GitHub-仓库部署" class="headerlink" title="6. GitHub 仓库部署"></a>6. GitHub 仓库部署</h2><p>我建立了两个仓库：</p><ul><li><code>hexo-source</code>: 博客源码，包括 markdown、配置、主题等</li><li><code>hexo-blog</code>: 用于部署静态页面（GitHub Pages）</li></ul><h3 id="配置-Hexo-部署目标"><a href="#配置-Hexo-部署目标" class="headerlink" title="配置 Hexo 部署目标"></a>配置 Hexo 部署目标</h3><p>在 <code>_config.yml</code> 中添加：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:yourname/hexo-blog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure><p>并安装部署插件：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>之后运行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure><p>即可将生成的静态页面推送到部署仓库。</p><hr><h2 id="7-自动部署流程（可选但强烈推荐）"><a href="#7-自动部署流程（可选但强烈推荐）" class="headerlink" title="7. 自动部署流程（可选但强烈推荐）"></a>7. 自动部署流程（可选但强烈推荐）</h2><p>如果你懒得每次都本地运行 <code>hexo d</code>，可以配置 GitHub Actions，实现自动部署。</p><p>详见我另一篇文章：<a href="/2025/05/29/%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B%EF%BC%9A%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%98%AF%E6%80%8E%E4%B9%88%E9%83%A8%E7%BD%B2%E7%9A%84/">用 GitHub Actions 实现自动部署流程：我的博客是怎么部署的</a>。</p><hr><h2 id="8-写作体验优化"><a href="#8-写作体验优化" class="headerlink" title="8. 写作体验优化"></a>8. 写作体验优化</h2><p>我做了以下几点提升写作体验：</p><ul><li>使用 Typora 写 Markdown。</li><li>使用标签和分类系统方便归类</li><li>加入搜索插件、阅读进度条、站内跳转优化</li></ul><hr><h2 id="9-Qexo-管理面板（可选）"><a href="#9-Qexo-管理面板（可选）" class="headerlink" title="9. Qexo 管理面板（可选）"></a>9. Qexo 管理面板（可选）</h2><p>为了更方便地在线发布和管理文章，我接入了 Qexo 面板系统：</p><ul><li>前端通过 API 拉取文章内容</li><li>后端使用 GitHub Token 更新源码仓库</li><li>配合 Webhook 触发自动部署</li></ul><p>这样我可以在手机上写博客、发文章，几乎完全摆脱了本地流程。</p><hr><h2 id="10-小结"><a href="#10-小结" class="headerlink" title="10. 小结"></a>10. 小结</h2><p>搭建博客最开始确实有些繁琐，但一旦流程通畅，就会觉得非常值得。你掌握了整个建站的技术链条，还能随心扩展功能，远比依赖平台的博客系统灵活。</p><p>如果你也想搭一个属于自己的博客，希望这篇文章能帮你少走些弯路。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 技术分享 </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+            <tag> 自动化部署 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>时间管理：用番茄工作法结合软件工具提升效率</title>
+      <link href="/posts/37814.html"/>
+      <url>/posts/37814.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="时间管理：用番茄工作法结合软件工具提升效率"><a href="#时间管理：用番茄工作法结合软件工具提升效率" class="headerlink" title="时间管理：用番茄工作法结合软件工具提升效率"></a>时间管理：用番茄工作法结合软件工具提升效率</h1><p>说实话，我之前总是觉得时间不够用，一忙就乱，做什么都没头没脑。后来尝试用番茄工作法配合几个软件工具，效果还真不错，能帮我更专注地完成任务，也不至于累到炸。这里就分享下我的一些亲身体验和做法。</p><h2 id="1-番茄工作法到底是什么？"><a href="#1-番茄工作法到底是什么？" class="headerlink" title="1. 番茄工作法到底是什么？"></a>1. 番茄工作法到底是什么？</h2><p>简单说，就是把工作时间切成25分钟一段，专注干活，中间休息5分钟。每完成4个25分钟，再休息个更长的15-30分钟。这个方法听起来简单，但真的能让你把注意力集中起来，避免老是分心。</p><h2 id="2-我用的几个好用的软件"><a href="#2-我用的几个好用的软件" class="headerlink" title="2. 我用的几个好用的软件"></a>2. 我用的几个好用的软件</h2><ul><li><strong>Forest</strong>：特别有趣，你专注时“种树”，分心树就枯死了，挺有成就感的。  </li><li><strong>Pomodone</strong>：能和我平时用的任务管理工具连起来，时间和任务一块儿管。  </li><li><strong>番茄ToDo</strong>：国产免费，功能够用，也支持记录专注时间。</li></ul><p>我会根据当天的任务挑一个用，毕竟换换工具也能避免审美疲劳。</p><h2 id="3-怎么搭配软件用更有效？"><a href="#3-怎么搭配软件用更有效？" class="headerlink" title="3. 怎么搭配软件用更有效？"></a>3. 怎么搭配软件用更有效？</h2><h3 id="3-1-先把大任务拆开"><a href="#3-1-先把大任务拆开" class="headerlink" title="3.1 先把大任务拆开"></a>3.1 先把大任务拆开</h3><p>遇到大项目，先写下每个小步骤，不然坐下来就不知道干啥。用 Notion 或 Todoist 把任务都列清楚，排序也做好。</p><h3 id="3-2-开启番茄钟，别想别的"><a href="#3-2-开启番茄钟，别想别的" class="headerlink" title="3.2 开启番茄钟，别想别的"></a>3.2 开启番茄钟，别想别的</h3><p>计时开始后，手机静音，消息关掉，专心做手头事。刚开始会忍不住看手机，但慢慢能坚持。</p><h3 id="3-3-休息别宅在电脑旁"><a href="#3-3-休息别宅在电脑旁" class="headerlink" title="3.3 休息别宅在电脑旁"></a>3.3 休息别宅在电脑旁</h3><p>休息5分钟时起来走走，喝杯水，伸伸懒腰，别玩手机刷抖音，真的不容易回到状态。</p><h3 id="3-4-定期看看统计数据"><a href="#3-4-定期看看统计数据" class="headerlink" title="3.4 定期看看统计数据"></a>3.4 定期看看统计数据</h3><p>用的软件都会帮你记录一天用了多少番茄钟，看着数字慢慢攒起来也挺有动力。</p><h2 id="4-我的心得小结"><a href="#4-我的心得小结" class="headerlink" title="4. 我的心得小结"></a>4. 我的心得小结</h2><ul><li>一开始不容易坚持，别急，习惯了就好。  </li><li>25分钟可以调整，太长太短都不合适。  </li><li>整理好工作环境，别让杂物干扰自己。  </li><li>软件和任务管理结合，才能真正管住自己。</li></ul><h2 id="5-结尾"><a href="#5-结尾" class="headerlink" title="5. 结尾"></a>5. 结尾</h2><p>这方法帮我挺多，希望也能帮到你。时间管理不是逼自己拼命，而是帮你找到节奏感。用点小工具，给自己一点“仪式感”，工作也能更有动力。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 时间管理 </tag>
+            
+            <tag> 番茄工作法 </tag>
+            
+            <tag> 效率 </tag>
+            
+            <tag> 软件工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>植物养护日记：新手养绿植的那些坑和经验</title>
+      <link href="/posts/51997.html"/>
+      <url>/posts/51997.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="植物养护日记：新手养绿植的那些坑和经验"><a href="#植物养护日记：新手养绿植的那些坑和经验" class="headerlink" title="植物养护日记：新手养绿植的那些坑和经验"></a>植物养护日记：新手养绿植的那些坑和经验</h1><p>我第一次认真养植物，大概是搬出来住之后的事。当时想着屋里太空了，想加点“活物”，就去花市买了两盆绿萝。卖花的大哥说，这东西“扔那儿都能活”。听着挺放心，我就拎了回来。结果不到两周，叶子一半黄了，根还烂了，直接劝退。</p><p>但也不知道为啥，我对养绿植这事就是上了头。从绿萝开始，一路踩坑、翻车，慢慢也从“植物杀手”熬成了一个对绿植略有心得的普通人。今天就跟大家聊聊我这些年养植物的经验，特别适合刚开始养绿植或者老是养不活的人。</p><h2 id="1-新手第一课：别光看脸，选对植物最重要"><a href="#1-新手第一课：别光看脸，选对植物最重要" class="headerlink" title="1. 新手第一课：别光看脸，选对植物最重要"></a>1. 新手第一课：别光看脸，选对植物最重要</h2><p>刚开始的时候，我对“适合新手”这几个字完全没概念，看到啥好看买啥。结果带回家发现，有些植物特别“娇气”：要阳光、要通风、要喷水、还怕冷怕热。说白了就是我根本伺候不过来。</p><p>后来才知道，新手还是要从“好养的”开始，比如：</p><ul><li><strong>绿萝</strong>：生命力顽强，耐阴又不挑水。</li><li><strong>吊兰</strong>：随便插土里都能长的狠角色。</li><li><strong>虎尾兰（虎皮兰）</strong>：完全可以忘掉它两周都不会死。</li><li><strong>龟背竹</strong>：长得快，颜值也高。</li></ul><p>这些植物就算你忘了几天浇水，它也不会立马死给你看，非常适合懒人&#x2F;上班族。</p><h2 id="2-浇水：不是越多越好，反而很多植物是被“淹死”的"><a href="#2-浇水：不是越多越好，反而很多植物是被“淹死”的" class="headerlink" title="2. 浇水：不是越多越好，反而很多植物是被“淹死”的"></a>2. 浇水：不是越多越好，反而很多植物是被“淹死”的</h2><p>最开始我是看到叶子有点干，就疯狂浇水，有时候一天浇两次。后来学了一句话：“大部分植物不是渴死的，是被泡死的。”可太对了。</p><p>我现在的做法是——用手指戳戳土壤，一两个指节进去，感觉干了才浇；实在不想用手，买个土壤湿度计也行，几块钱的小工具，能救命。</p><p>还有就是记得浇水要**“浇透”**，不是表面洒点水糊弄一下，而是让水从花盆底下流出来，这样根部才能喝饱。</p><h2 id="3-光照：不是所有植物都爱晒太阳"><a href="#3-光照：不是所有植物都爱晒太阳" class="headerlink" title="3. 光照：不是所有植物都爱晒太阳"></a>3. 光照：不是所有植物都爱晒太阳</h2><p>我一开始把植物全摆到阳台上，结果有几盆被晒得发蔫发黄。后来才知道，有些植物喜欢散射光，有些喜欢全日照，还有些耐阴（比如绿萝）。所以关键还是要<strong>搞清楚每种植物的喜好</strong>，再决定放在哪。</p><p>一般来说，<strong>朝南的阳台</strong>是最适合大多数植物的，如果是朝北或者特别暗，就选耐阴品种，别硬凑热闹。</p><h2 id="4-换盆和换土：不是一买回来就要操作的事"><a href="#4-换盆和换土：不是一买回来就要操作的事" class="headerlink" title="4. 换盆和换土：不是一买回来就要操作的事"></a>4. 换盆和换土：不是一买回来就要操作的事</h2><p>很多人（包括我以前）买完就迫不及待换一个好看的花盆，结果植物适应不过来就死了。其实植物到新环境后本身就要缓一缓，这时候再折腾换土换盆，根系容易受伤。</p><p>我的做法是——<strong>买回来先“原盆养”一两周</strong>，等它适应了新环境，再考虑要不要换盆。换盆的时候记得底部垫陶粒或者小石子，透气排水更好。</p><h2 id="5-施肥这事，不急"><a href="#5-施肥这事，不急" class="headerlink" title="5. 施肥这事，不急"></a>5. 施肥这事，不急</h2><p>有些人见植物长得慢，就开始拼命施肥，我以前也这么干，结果“烧根”。现在基本不着急，<strong>春夏每个月施一次薄肥，秋冬就停</strong>。大多数时候，施肥不是让植物立马“变壮”的灵丹妙药，反而容易搞砸。</p><h2 id="6-常规操作：剪叶、除虫、通风都要跟上"><a href="#6-常规操作：剪叶、除虫、通风都要跟上" class="headerlink" title="6. 常规操作：剪叶、除虫、通风都要跟上"></a>6. 常规操作：剪叶、除虫、通风都要跟上</h2><p>有时候看到叶子黄了，别着急以为是死了，可能只是老叶子自然代谢，<strong>把黄叶剪掉就行</strong>。如果看到有小黑点、小虫子，记得及时清理，可以用点安全的除虫喷雾。养多了之后我还买了个喷雾壶，定期喷喷叶子，植物状态真的好很多。</p><p>还有一点，<strong>一定要注意通风</strong>，不然植物容易得病，尤其是南方梅雨天，湿气大。</p><h2 id="7-记录养护，是我坚持下来的小秘诀"><a href="#7-记录养护，是我坚持下来的小秘诀" class="headerlink" title="7. 记录养护，是我坚持下来的小秘诀"></a>7. 记录养护，是我坚持下来的小秘诀</h2><p>我现在会在手机上记一下每次浇水和施肥的时间，有时候也拍个照做对比。这样一来就知道植物什么时候该喝水、是不是长得慢了。偶尔翻翻以前的照片，看到植物从小苗变“大个子”，还挺有成就感的。</p><hr><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>养植物这事儿，说简单也简单，说难也确实有点难。但最重要的，是你得花心思去“观察”和“理解”它们。不是照着教程机械执行，而是慢慢摸出规律，跟它们建立点“关系”。</p><p>现在我家阳台上有十几盆绿植，每天一睁眼看到绿油油的叶子在阳光底下晃晃悠悠，心情也跟着放松下来。</p><p>如果你也想开始养点绿色生命，就从一盆绿萝或吊兰开始吧。记得多观察、多记录，这样才能真正“活”起来。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 植物养护 </tag>
+            
+            <tag> 新手经验 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于时·刻APP的UI设计开发思路思考</title>
+      <link href="/posts/5685.html"/>
+      <url>/posts/5685.html</url>
+      
+        <content type="html"><![CDATA[<p>最后更新：2025年4月 | 版本：0.2 </p><p>我很喜欢在车上或者在短程路途中阅读点什么，但是这种方式的阅读方式并不理想，因为我需要花费很多时间来寻找适合的书籍，而且阅读的过程中往往是刚刚看上，而路途就到了终点。这种感觉令人困扰。</P><p>为此我最近在做一款名叫"时·刻"的APP，它可以帮助我在短程路上找到适合的短篇，集成了音乐播放的功能，每一个设计都是为了即刻当下而设计的，这样我就可以在短程路上轻松地阅读点什么了。</p><p><img src="/img/zhushitu.png" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><p style="font-size: 0.95rem; color: #555; text-align: center;">Chronotick 时·刻</p><h2>设计</h2><p>首先说明一下，因为这个APP还在很初期的阶段，目前来说更多的还是一些想法，这个项目离结束可能还早的很。</p><p>时刻APP英文名字为 Chronotick Chronotick为"Chrono"（时间词根）+ "tick"（滴答声），"tick"与中文"刻"发音相似。该词兼具时间流动的动态意象与精准刻度感。</p><p>在设计APP时，市面上少有类似的APP，凸显自己的设计风格，我偏爱一些设计原则，如"超简洁化"、"直达"、"易用"等。</p><p>考虑APP的体量大小，作为一个小应用，我并没有做华丽的动效，所有的设计都是为了专注阅读。</p><p><img src="/img/APP开屏页.png"></p><p style="font-size: 0.95rem; color: #555; text-align: center;">APP开屏页与登录页</p><h2>UI 交互</h2><p>在设计交互时，我采用了"扁平化"的设计风格，所有的交互都是基于"直达"的原则，即用户不需要过多的操作，就可以完成想要的操作，单手操作阅读的感觉真的很好</p><p>首页设计我引入了一个“此刻”的概念，即用户可以每天在这里看到推荐的短篇，有可能是中篇的一段影评，一个故事，也有可能是一段经典，可以根据自己的需求进行筛选。</p><P>首页的设计是一个类似与“拍立得”或者”明信片“的设计，向下滑动就可以看到昨天的内容，向上滑动就可以看到今天的内容，不需要过多的操作，专注于自己的阅读。</P><p><img src="/img/首页与即刻预览.png"></p><p style="font-size: 0.95rem; color: #555; text-align: center;">首页与此刻文章预览</p><p>值得一提的是，如果用户不满足于此刻的短篇内容，在发现页面有详细的文章分类以及音乐精选，可以在阅读文章的同时聆听文章相关音乐，虽然软件是弱社交的工具APP,但是好友系统依旧得到了保留。</p><p><img src="/img/发现页.png"></p><p style="font-size: 0.95rem; color: #555; text-align: center;">发现页与即刻音乐</p><h2>其他功能与细节</h2><p>在功能模块之外，我也尽量在一些细节上做了设计。比如阅读页的字号可以根据用户习惯调节，白天和夜间会自动切换浅色/深色模式，这些都是我平时在使用其他阅读产品时常常感到缺失的功能。</p> <p>音乐播放模块是一个轻量级的浮动播放器，不占据页面主要视线。用户可以自由切换是否开启音乐，也可以将音乐最小化到页面底部，这样不会打断阅读节奏。</p><p>考虑到有些用户更偏好听书的方式，我也在实验「朗读模式」，用系统语音朗读当前文章。这对于通勤者或者视力不方便的人可能会是一个替代方式。</p> <p>发现页除了分类筛选，我还加了一些小的探索性功能。比如“随机一篇”，可以在无所事事时刷新出现一段文字，灵感来源其实是小时候翻日历，偶然看到一句话的那种体验。</p><p>设置页也做了简化处理。大部分默认设置都倾向“不过度打扰”，比如不强制推送、不会弹出评分请求，也不会自动登录第三方账号。我希望它是一个“你主动来用”的产品，而不是“它追着你用”的产品。</p><h2>总结与展望</h2><p>目前这款名为“时·刻”的APP还处在一个比较初步的阶段，我也并不急于上线，更多的是作为一个长期的尝试。</p><p>我自己很喜欢这种有点“偏静态”的工具型应用——没有干扰、不催促、不强调打卡，只是你想读的时候，它刚好合适地出现。</p> <p>后续可能还会继续优化一些体验，比如夜间模式、不同音乐风格的切换，甚至和一些平台联动，但这些都不会违背“简单”“轻量”“即时”的初衷。</p> <p>这个项目最初只是我为了解决“短途阅读焦虑”做的一点尝试，但在做的过程中，它逐渐变成了一个承载我个人阅读习惯和审美趣味的地方。</p> <p>希望它慢慢成长，也希望有人能在自己的碎片时间里，因为它，读到一段合适的文字，听到一首合适的音乐。</p><p>这个项目从一开始就不是为了“做一个产品”而起步的，而是基于一种真实的使用需求——我希望能在每天不那么完整、不那么安静的碎片时间里，读点什么、听点什么，不需要选太久，也不需要处理复杂的操作。</p> <p>很多功能，其实是在“我自己怎么用”这个前提下反推设计出来的。比如首页就是“我现在就想看点东西”，发现页就是“我现在想换个口味”，收藏夹就是“我之前看到一段不错，过几天还想回来看看”。</p><p>作为一个个人主导的小项目，它目前还缺乏完整的内容来源体系和内容审核机制，也没有真正开始规模化测试，但我觉得这些都不急。我更希望它先成为一个舒服、稳定、自洽的小工具。</p> <p>未来可能会加入的一些方向包括：</p> <ul> <li>内容合作：与一些公众号、短篇创作者进行非商业内容合作</li> <li>主题扩展：如电影摘录、日记风短文、读者投稿等内容板块</li> <li>体验增强：加入动画过渡、段落标记、音乐收藏列表等</li> </ul> <p>但不管增加多少功能，我会坚持它的节奏是“慢的”，内容是“轻的”，设计是“静的”。</p> <p>最后，如果这个APP将来真的上线，我想它的描述里也许只需要一句话：</p> <blockquote style="margin: 1rem; padding-left: 1rem; border-left: 4px solid #999; color: #444;"> “在这段路上，读点什么，听点什么。” </blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> UI设计 </tag>
+            
+            <tag> 项目 </tag>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>星途项目app UI设计复盘</title>
+      <link href="/posts/23917.html"/>
+      <url>/posts/23917.html</url>
+      
+        <content type="html"><![CDATA[ <p>最后更新：2024年4月 | 版本：2.1.24</p>星途是一个主打露营的社交平台，旨在帮助用户发现和分享露营的乐趣。通过地图、筛选和用户分享，用户可以快速找到适合露营的地点。同时，星途还提供了创建活动、发布日记和记录旅程的功能，让用户能够与其他露营者互动和记录自己的露营经历，作为一个三年前的项目，我对其进行了一次文档复盘。<!-- 原始文档完整结构 --><h2>一、背景</h2><p>近年，露营作为一种融合自然体验与社交文化的生活方式，正在年轻人群体中迅速升温。相较于传统出行，露营更强调"自发组织""共建共享"与"深度陪伴"，也由此孕育出对线上组织与线下链接平台的新需求。然而，现有社交产品多以城市场景为主，缺乏对露营这种"时间密集+空间分散"的社交场景的细致支持。</p><h2>二、产品定位与用户画像</h2>    <h3>1. 产品定位</h3>    <p>我们将星途定位为"露营社交平台"，强调它既有内容社区的结构，又具备工具型产品的效率。围绕三大场景模块构建：</p>    <ul>        <li>发现营地：通过地图、筛选与用户分享，快速找到适合露营的地点</li>        <li>发起同行：建立主题活动，如"一起去林间观星""亲子森林营"等</li>        <li>记录旅程：以图文 + GPS轨迹的形式，沉淀个人露营记忆，形成专属"露营地图"</li>    </ul><h3>2. 用户画像细化</h3>    <table border="1">        <tr><th>用户类型</th><th>主要动机</th><th>典型行为</th></tr>        <tr><td>新手露营者</td><td>寻找安全靠谱的营地、跟队学习经验</td><td>浏览评论、报名公开活动</td></tr>        <tr><td>熟练玩家</td><td>发起露营组队、分享露营技巧</td><td>创建活动、发布图文日记</td></tr>        <tr><td>内容创作者</td><td>打造户外生活调性内容</td><td>拍摄、写文、建立个人主页</td></tr>        <tr><td>城市社恐青年</td><td>想尝试但不擅社交</td><td>加入低社交门槛的公开营</td></tr>    </table><h2>三、功能架构与部分UI设计</h2>    <h3>信息架构（Information Architecture）</h3><p><img src="https://pic.mikon.ink/i/2025/04/30/681211ff37529.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><h3 style="border-left: 4px solid #3b82f6; padding-left: 0.5rem;">首页（社交 + 推荐）</h3><p><strong>长图瀑布流 · 分享用户笔记</strong></p><p><img src="https://pic.mikon.ink/i/2025/04/30/6811f5f1ccc36.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><p><strong>分类的内容信息发布</strong></p><p><img src="https://pic.mikon.ink/i/2025/04/30/6811fa9395257.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><p><strong>露营笔记流（内容流）</strong></p><p><img src="https://pic.mikon.ink/i/2025/04/30/6811ff65cad4d.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><p><strong>社区达人露营活动</strong></p><p><img src="https://pic.mikon.ink/i/2025/04/30/681210889a693.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><h3 style="border-left: 4px solid #3b82f6; padding-left: 0.5rem;">发现页（地图 + 标签筛选）</h3><p><strong>营地地图视图</strong></p><p><img src="https://pic.mikon.ink/i/2025/04/30/681207dc9c877.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><p><strong>筛选功能：地理位置、营地类型、设施、热度</strong></p><p><img src="https://pic.mikon.ink/i/2025/04/30/6811fff856ff5.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><h3 style="border-left: 4px solid #3b82f6; padding-left: 0.5rem;">商城</h3><p><strong>浏览商城首页</strong></p><p><img src="https://pic.mikon.ink/i/2025/04/30/681200bf5630e.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><p><strong>商品内详情页</strong></p><p><img src="https://pic.mikon.ink/i/2025/04/30/68120e4d30528.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><h3 style="border-left: 4px solid #3b82f6; padding-left: 0.5rem;">我的</h3><p><strong>我的星途</strong></p><p><img src="https://pic.mikon.ink/i/2025/04/30/6811f871b898d.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><p><em>＊受限篇幅，仅展示部分功能与 UI 设计</em></p><p><img src="https://pic.mikon.ink/i/2025/04/30/6812118f4b92f.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p><h2>四、设计语言与界面风格</h2>    <h3>1. 品牌设计语言：自然 × 专业 × 连接感</h3>    <ul>        <li>主色调：星夜灰、帆布色，呼应露营中的典型色彩体验</li>        <li>元素风格：弱边框、柔光阴影、拟物渐变，强调"可亲近感"</li>        <li>字体与排版：正文用更人文友好的字体，简约一步到达</li>    </ul><h3>2. 界面设计样例</h3>    <ul>        <li>首页推荐区瀑布流设计注重"图强文弱"</li>         <li>地图页采用多层信息展示结构</li>    </ul><h2>五、社交机制与信任设计</h2>    <h3>1. 活动信任机制</h3>    <ul>        <li>活动发起人必须绑定实名并展示"过往活动评分"</li>        <li>用户在完成活动后可对同行者评价，形成"露营信誉分"</li>        <li>陌生组队前可加入临时聊天群查看成员历史露营记录</li>    </ul><h3>2. 松弛社交策略</h3>    <ul>        <li>支持"默契组队"：加入活动无需开启私聊</li>        <li>引入匿名活动报名（由发起人审核）</li>        <li>活动标签机制支持个性偏好匹配</li>    </ul><h2>六、设计挑战与应对方案</h2>    <table border="1">        <tr><th>设计挑战</th><th>应对策略</th></tr>        <tr><td>场景分散，用户动线难统一</td><td>构建基于旅程的整合入口</td></tr>        <tr><td>地图数据真实性难以保障</td><td>用户生成+平台审核+营地主协作三位一体机制</td></tr>        <tr><td>露营社交可能被异化为"搭讪工具"</td><td>明确非陌聊导向、引入行为规范举报系统</td></tr>    </table><h2>七、用户测试与优化反馈</h2>    <h3>1. 内测反馈数据摘要</h3>    <ul>        <li>60%的用户第一次使用即点击"附近活动"</li>        <li>发布图文日记功能使用率高，日均图文浏览达12.5篇</li>        <li>"地图筛选营地"功能被用户评价为"比其他平台方便"</li>    </ul><h3>2. 用户声音摘录</h3>    <blockquote>        "第一次组队去露营，没想到真的有人来，还挺好聊的。"<br>        —— 来自广州的大学生内测用户    </blockquote><h2>八、未来展望与产品迭代方向</h2>    <h3>1. 即将上线功能</h3>    <ul>        <li>活动保险接入，提升用户安全感</li>        <li>多人位置共享与活动轨迹生成</li>        <li>"星野身份"系统（专属勋章、成长记录）</li>    </ul><h3>2. 中长期目标</h3>    <ul>        <li>引入营地商业合作（预订、营地周边服务）</li>        <li>开展"星途市集"计划</li>        <li>推出"星途电台"小功能</li>    </ul><h2>九、复盘总结</h2>    <p>星途APP作为一个新兴的社交产品，面对的是一个正在迅速生长的生活方式社群。在整个设计与产品化过程中，我始终坚持「自然氛围 × 真实社交 × 内容记录」三位一体的设计理念，力求让数字产品真正服务于线下的真实体验。<p>这次版本的完成只是起点。真正的星途，不止于应用本身，更是一次又一次人与自然的连接尝试。在一次次帐篷支起和篝火升起的时刻里，用户才是这段旅程真正的主角</p><br> <footer><br>        <hr><br>        <p>星途产品团队 LEO LENG ©2025 完整保留所有内容节点</p></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> UI设计 </tag>
+            
+            <tag> 项目 </tag>
+            
+            <tag> 软件 </tag>
+            
+            <tag> 复盘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
