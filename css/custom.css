@@ -1,0 +1,307 @@
+/* 白天网站背景 */
+#web_bg {
+    background-size: 16rem;
+    background-image: url(/img/bg.svg) !important;
+    background-repeat: initial
+}
+/* 夜间网站背景 */
+[data-theme=dark] #web_bg {
+    background-size: 100rem;
+    background-image: url(/img/bg-dark.svg) !important;
+}
+.custom-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--anzhiyu-maskbg);  /* 使用主题变量，保持一致性 */
+    font-family: "寒蝉全圆体"!important;
+}
+
+.custom-logo {
+    width: 80px;  /* 调小一点 */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.custom-signature {
+    font-size: 1.1rem;
+    color: var(--anzhiyu-fontcolor);  /* 使用主题文字颜色 */
+    margin: 8px 0 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 8px 16px;  /* 按钮更小 */
+    background: var(--anzhiyu-blue-main);  /* 使用主题蓝色 */
+    color: var(--anzhiyu-white);
+    border-radius: var(--anzhiyu-radius);  /* 使用主题圆角 */
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: var(--style-border-none);
+}
+
+.custom-btn:hover {
+    background: var(--anzhiyu-blue-hover);
+    color: var(--anzhiyu-white);
+}
+
+/* 默认隐藏，只在文章页显示 */
+#mortalcat-footer-bar {
+    display: none;
+}
+
+/* 文章页显示 */
+.post #mortalcat-footer-bar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+/* Logo容器样式 */
+#mortalcat-footer-bar .footer-logo {
+    width: 192px;
+    height: 105px;
+    margin-bottom: 4px;
+}
+
+/* Logo样式 - 亮色模式（默认） */
+#mortalcat-footer-bar .footer-logo .MortalCat {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/logo1.png);  /* 黑色logo用于亮色模式 */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Logo样式 - 暗色模式 */
+[data-theme=dark] #mortalcat-footer-bar .footer-logo .MortalCat {
+    background-image: url(/img/logo.png);  /* 白色logo用于暗色模式 */
+}
+
+/* 描述文字样式 */
+#mortalcat-footer-bar .footer-bar-description {
+    color: var(--anzhiyu-secondtext);
+    font-weight: 700;
+    margin: 2px 0;
+}
+
+/* 按钮样式 */
+#mortalcat-footer-bar a.footer-bar-link {
+    padding: 4px 16px;
+    background: var(--anzhiyu-secondbg);
+    border-radius: 20px;
+    margin-top: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: var(--style-border-always);
+    text-decoration: none;
+}
+
+/* 按钮悬停效果 */
+#mortalcat-footer-bar a.footer-bar-link:hover {
+    background: var(--anzhiyu-main-op-deep);
+    color: var(--anzhiyu-white);
+}
+
+#footer {
+    background: transparent !important;  /* 使用 !important 确保覆盖原主题样式 */
+}
+
+/* 如果还需要移除边框和阴影 */
+#footer, #footer-wrap {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* 如果底部有渐变或其他背景，也可以一并清除 */
+#footer:before {
+    background: transparent !important;
+}
+
+.gold-widget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+  
+  /* 左侧图标 + 文本 */
+  .gold-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+  }
+  
+  /* 右侧价格 + 涨跌 */
+  .gold-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+  }
+  #card-gold.card-widget {
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem 0;         /* 缩小上下间距 */
+    border-radius: 8px;       /* 可选：让它圆角小一点 */
+    font-size: 0.95rem;       /* 可选：整体字体微缩 */
+  }
+/* ───────────────────────────
+   全屏遮罩 & 淡出
+────────────────────────── */
+#loading-box {
+    position: fixed; inset: 0;
+    background: #111;
+    display: flex; justify-content: center; align-items: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+  }
+  
+  #loading-box.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  /* 整体向上偏移 */
+  .loader {
+    transform: translateY(-12vh);
+  }
+  
+  /* ───────────────────────────
+     主体内容垂直排列 + 舒适间距
+  ────────────────────────── */
+  .text-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5rem; /* 间距加大 */
+  }
+  
+  /* ───────────────────────────
+     光圈动画
+  ────────────────────────── */
+  .hole {
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    width: 180px; height: 180px;
+  }
+  
+  .hole i {
+    display: block;
+    position: absolute;
+    width: 90px; height: 90px;
+    border-radius: 200px;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.1);
+    animation-name: scale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .hole i:nth-child(1)  { animation-delay: 0.3s; }
+  .hole i:nth-child(2)  { animation-delay: 0.6s; }
+  .hole i:nth-child(3)  { animation-delay: 0.9s; }
+  .hole i:nth-child(4)  { animation-delay: 1.2s; }
+  .hole i:nth-child(5)  { animation-delay: 1.5s; }
+  .hole i:nth-child(6)  { animation-delay: 1.8s; }
+  .hole i:nth-child(7)  { animation-delay: 2.1s; }
+  .hole i:nth-child(8)  { animation-delay: 2.4s; }
+  .hole i:nth-child(9)  { animation-delay: 2.7s; }
+  .hole i:nth-child(10) { animation-delay: 3s; }
+  
+  @keyframes scale {
+    0% {
+      transform: scale(2);
+      opacity: 0;
+      box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      transform: scale(1) translateY(-5px);
+      opacity: 1;
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      transform: scale(0.1) translateY(5px);
+      opacity: 0;
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0);
+    }
+  }
+  
+  /* ───────────────────────────
+     文字轮换动画
+  ────────────────────────── */
+  .loading-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .loading-label {
+    color: #ccc;
+    user-select: none;
+    font: 500 22px/40px "Poppins", sans-serif;
+  }
+  
+  .words {
+    position: relative;
+    width: 10rem; height: 40px;
+    overflow: hidden;
+  }
+  
+  .words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#111 10%, transparent 30%, transparent 70%, #111 90%);
+    pointer-events: none;
+  }
+  
+  .word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #956afa;
+    user-select: none;
+    font: 500 25px/40px "Poppins", sans-serif;
+    animation: spin_4991 4s infinite;
+  }
+  
+  @keyframes spin_4991 {
+    10%  {transform: translateY(-102%)}
+    25%  {transform: translateY(-100%)}
+    35%  {transform: translateY(-202%)}
+    50%  {transform: translateY(-200%)}
+    60%  {transform: translateY(-302%)}
+    75%  {transform: translateY(-300%)}
+    85%  {transform: translateY(-402%)}
+    100% {transform: translateY(-400%)}
+  }
+  
