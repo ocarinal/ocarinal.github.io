@@ -1,0 +1,6 @@
+/* 字体css */
+@font-face{
+    font-family: 'ziti'; 
+    font-display: swap;
+    src: url('/ttf/ziti.ttf') format("truetype");
+  }

@@ -1,0 +1,665 @@
+<!DOCTYPE html><html lang="ZH-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>星途项目app UI设计复盘 | Leo Blog</title><meta name="keywords" content="星途项目app"><meta name="author" content="LEO LENG"><meta name="copyright" content="LEO LENG"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#18171d"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="星途项目app UI设计复盘"><meta name="application-name" content="星途项目app UI设计复盘"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#18171d"><meta property="og:type" content="article"><meta property="og:title" content="星途项目app UI设计复盘"><meta property="og:url" content="http://leoblog.cc/posts/23917.html"><meta property="og:site_name" content="Leo Blog"><meta property="og:description" content="最后更新：2024年4月 | 版本：2.1.24 星途是一个主打露营的社交平台，旨在帮助用户发现和分享露营的乐趣。通过地图、筛选和用户分享，用户可以快速找到适合露营的地点。同时，星途还提供了创建活动、发布日记和记录旅程的功能，让用户能够与其他露营者互动和记录自己的露营经历，作为一个三年前的项目，我"><meta property="og:locale" content="ZH-CN"><meta property="og:image" content="http://leoblog.cc/img/starway.png"><meta property="article:author" content="LEO LENG"><meta property="article:tag" content="前端开发,JavaScript,Hexo博客,数码评测"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="http://leoblog.cc/img/starway.png"><meta name="description" content="最后更新：2024年4月 | 版本：2.1.24 星途是一个主打露营的社交平台，旨在帮助用户发现和分享露营的乐趣。通过地图、筛选和用户分享，用户可以快速找到适合露营的地点。同时，星途还提供了创建活动、发布日记和记录旅程的功能，让用户能够与其他露营者互动和记录自己的露营经历，作为一个三年前的项目，我"><link rel="shortcut icon" href="/img/blog.png"><link rel="canonical" href="http://leoblog.cc/posts/23917.html"><link rel="preconnect" href="//cdn.cbd.int"><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="google-site-verification" content="xxx"><meta name="baidu-site-verification" content="code-xxx"><meta name="msvalidate.01" content="xxx"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/LENG%E5%8D%9A%E5%AE%A2" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"与数百名博主无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"},
+  peoplecanvas: undefined,
+  postHeadAiDescription: undefined,
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: 'https://peppy-centaur-262981.netlify.app/.netlify/functions/twikoo',
+  commentBarrageConfig:{"enable":true,"maxBarrage":1,"barrageTime":4000,"accessToken":"","mailMd5":""},
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":1},
+  friends_vue_info: {"apiurl":"https://friends.anheyu.com/"},
+  navMusic: true,
+  mainTone: {"mode":"both","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  authorStatus: {"skills":["欢迎来到LEO BIOG!"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: LEO LENG","link":"链接: ","source":"来源: Leo Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'Leo Blog',
+  title: '星途项目app UI设计复盘',
+  postAI: '',
+  pageFillDescription: '一、背景, 二、产品定位与用户画像, 1. 产品定位, 2. 用户画像细化, 三、功能架构与部分UI设计, 信息架构（Information Architecture）, 首页（社交 + 推荐）, 发现页（地图 + 标签筛选）, 商城, 我的, 四、设计语言与界面风格, 1. 品牌设计语言：自然 × 专业 × 连接感, 2. 界面设计样例, 五、社交机制与信任设计, 1. 活动信任机制, 2. 松弛社交策略, 六、设计挑战与应对方案, 七、用户测试与优化反馈, 1. 内测反馈数据摘要, 2. 用户声音摘录, 八、未来展望与产品迭代方向, 1. 即将上线功能, 2. 中长期目标, 九、复盘总结最后更新年月版本星途是一个主打露营的社交平台旨在帮助用户发现和分享露营的乐趣通过地图筛选和用户分享用户可以快速找到适合露营的地点同时星途还提供了创建活动发布日记和记录旅程的功能让用户能够与其他露营者互动和记录自己的露营经历作为一个三年前的项目我对其进行了一次文档复盘一背景近年露营作为一种融合自然体验与社交文化的生活方式正在年轻人群体中迅速升温相较于传统出行露营更强调自发组织共建共享与深度陪伴也由此孕育出对线上组织与线下链接平台的新需求然而现有社交产品多以城市场景为主缺乏对露营这种时间密集空间分散的社交场景的细致支持二产品定位与用户画像产品定位我们将星途定位为露营社交平台强调它既有内容社区的结构又具备工具型产品的效率围绕三大场景模块构建发现营地通过地图筛选与用户分享快速找到适合露营的地点发起同行建立主题活动如一起去林间观星亲子森林营等记录旅程以图文轨迹的形式沉淀个人露营记忆形成专属露营地图用户画像细化用户类型主要动机典型行为新手露营者寻找安全靠谱的营地跟队学习经验浏览评论报名公开活动熟练玩家发起露营组队分享露营技巧创建活动发布图文日记内容创作者打造户外生活调性内容拍摄写文建立个人主页城市社恐青年想尝试但不擅社交加入低社交门槛的公开营三功能架构与部分设计信息架构首页社交推荐长图瀑布流分享用户笔记分类的内容信息发布露营笔记流内容流社区达人露营活动发现页地图标签筛选营地地图视图筛选功能地理位置营地类型设施热度商城浏览商城首页商品内详情页我的我的星途受限篇幅仅展示部分功能与设计四设计语言与界面风格品牌设计语言自然专业连接感主色调星夜灰帆布色呼应露营中的典型色彩体验元素风格弱边框柔光阴影拟物渐变强调可亲近感字体与排版正文用更人文友好的字体简约一步到达界面设计样例首页推荐区瀑布流设计注重图强文弱地图页采用多层信息展示结构五社交机制与信任设计活动信任机制活动发起人必须绑定实名并展示过往活动评分用户在完成活动后可对同行者评价形成露营信誉分陌生组队前可加入临时聊天群查看成员历史露营记录松弛社交策略支持默契组队加入活动无需开启私聊引入匿名活动报名由发起人审核活动标签机制支持个性偏好匹配六设计挑战与应对方案设计挑战应对策略场景分散用户动线难统一构建基于旅程的整合入口地图数据真实性难以保障用户生成平台审核营地主协作三位一体机制露营社交可能被异化为搭讪工具明确非陌聊导向引入行为规范举报系统七用户测试与优化反馈内测反馈数据摘要的用户第一次使用即点击附近活动发布图文日记功能使用率高日均图文浏览达篇地图筛选营地功能被用户评价为比其他平台方便用户声音摘录第一次组队去露营没想到真的有人来还挺好聊的来自广州的大学生内测用户八未来展望与产品迭代方向即将上线功能活动保险接入提升用户安全感多人位置共享与活动轨迹生成星野身份系统专属勋章成长记录中长期目标引入营地商业合作预订营地周边服务开展星途市集计划推出星途电台小功能九复盘总结星途作为一个新兴的社交产品面对的是一个正在迅速生长的生活方式社群在整个设计与产品化过程中我始终坚持自然氛围真实社交内容记录三位一体的设计理念力求让数字产品真正服务于线下的真实体验这次版本的完成只是起点真正的星途不止于应用本身更是一次又一次人与自然的连接尝试在一次次帐篷支起和篝火升起的时刻里用户才是这段旅程真正的主角星途产品团队完整保留所有内容节点',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-08-20 01:35:25',
+  postMainColor: '#262626',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/font.css" media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Leo Blog" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box"><div class="loader"><div class="orbit"><svg class="curve" viewBox="0 0 100 100"><defs><path id="circlePath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"></path></defs></svg></div><div class="text-row"><div class="hole"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="loading-row"><span class="loading-label">Loading</span><div class="words"><span class="word">  Buttons.</span><span class="word">  Forms.</span><span class="word">  Switches.</span><span class="word">  Cards.</span><span class="word">  Photos.</span><span class="word">  Tables.</span></div></div></div></div></div><script>window.addEventListener('load', () => {
+  document.getElementById('loading-box')?.classList.add('loaded');
+});</script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">Leo Blog</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 所有文章</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 文章分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> TAG</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/music/?id=2259332459&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener" href="https://xc.leoblog.cc"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 光影等待</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/update/"><i class="anzhiyufont anzhiyu-icon-bolt faa-tada" style="font-size: 0.9em;"></i><span> 本站日志</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://pic.mikon.ink/i/2025/04/27/680e436979da9.webp" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://pic.mikon.ink/i/2025/04/27/680e436979da9.webp"></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://pic.mikon.ink/i/2025/04/27/680e43690d543.webp" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://pic.mikon.ink/i/2025/04/27/680e43690d543.webp"></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/CI-CD/" style="font-size: 1.05rem;">CI/CD<sup>1</sup></a><a href="/tags/GitHub-Actions/" style="font-size: 1.05rem;">GitHub Actions<sup>1</sup></a><a href="/tags/GitHub-Pages/" style="font-size: 1.05rem;">GitHub Pages<sup>1</sup></a><a href="/tags/Hexo/" style="font-size: 1.05rem;">Hexo<sup>2</sup></a><a href="/tags/UI%E8%AE%BE%E8%AE%A1/" style="font-size: 1.05rem;">UI设计<sup>4</sup></a><a href="/tags/%E4%BB%A3%E7%A0%81%E5%88%86%E4%BA%AB/" style="font-size: 1.05rem;">代码分享<sup>1</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.05rem;">博客<sup>1</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 1.05rem;">博客搭建<sup>1</sup></a><a href="/tags/%E5%A4%8D%E7%9B%98/" style="font-size: 1.05rem;">复盘<sup>1</sup></a><a href="/tags/%E5%AD%97%E4%BD%93%E8%AE%BE%E8%AE%A1/" style="font-size: 1.05rem;">字体设计<sup>1</sup></a><a href="/tags/%E5%AD%97%E4%BD%93%E9%80%89%E6%8B%A9/" style="font-size: 1.05rem;">字体选择<sup>1</sup></a><a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 1.05rem;">思考<sup>1</sup></a><a href="/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" style="font-size: 1.05rem;">技术分享<sup>1</sup></a><a href="/tags/%E6%95%88%E7%8E%87/" style="font-size: 1.05rem;">效率<sup>1</sup></a><a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.05rem;">教程<sup>2</sup></a><a href="/tags/%E6%96%B0%E6%89%8B%E7%BB%8F%E9%AA%8C/" style="font-size: 1.05rem;">新手经验<sup>1</sup></a><a href="/tags/%E6%97%A0%E7%BA%BF%E7%94%B5/" style="font-size: 1.05rem;">无线电<sup>1</sup></a><a href="/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">时间管理<sup>1</sup></a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 1.05rem;">服务器<sup>1</sup></a><a href="/tags/%E6%A4%8D%E7%89%A9%E5%85%BB%E6%8A%A4/" style="font-size: 1.05rem;">植物养护<sup>1</sup></a><a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 1.05rem;">游戏<sup>1</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 1.05rem;">生活<sup>1</sup></a><a href="/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/" style="font-size: 1.05rem;">番茄工作法<sup>1</sup></a><a href="/tags/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C/" style="font-size: 1.05rem;">社交网络<sup>1</sup></a><a href="/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/" style="font-size: 1.05rem;">经验分享<sup>2</sup></a><a href="/tags/%E8%83%B6%E7%89%87%E6%91%84%E5%BD%B1/" style="font-size: 1.05rem;">胶片摄影<sup>1</sup></a><a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/" style="font-size: 1.05rem;">自动化部署<sup>1</sup></a><a href="/tags/%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/" style="font-size: 1.05rem;">自动部署<sup>1</sup></a><a href="/tags/%E8%AE%BE%E8%AE%A1/" style="font-size: 1.05rem;">设计<sup>1</sup></a><a href="/tags/%E8%AE%BE%E8%AE%A1%E7%BB%8F%E9%AA%8C/" style="font-size: 1.05rem;">设计经验<sup>2</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 1.05rem;">软件<sup>2</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" style="font-size: 1.05rem;">软件工具<sup>1</sup></a><a href="/tags/%E9%82%AE%E4%BB%B6%E6%A8%A1%E6%9D%BF/" style="font-size: 1.05rem;">邮件模板<sup>1</sup></a><a href="/tags/%E9%A1%B9%E7%9B%AE/" style="font-size: 1.05rem;">项目<sup>2</sup></a></div></div><hr></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/08/"><span class="card-archive-list-date">八月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/07/"><span class="card-archive-list-date">七月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/06/"><span class="card-archive-list-date">六月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/05/"><span class="card-archive-list-date">五月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">7</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">四月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li></ul></div><hr></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url">项目</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/UI%E8%AE%BE%E8%AE%A1/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>UI设计</span></a><a class="article-meta__tags" href="/tags/%E9%A1%B9%E7%9B%AE/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>项目</span></a><a class="article-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>软件</span></a><a class="article-meta__tags" href="/tags/%E5%A4%8D%E7%9B%98/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>复盘</span></a></span></div></div><h1 class="post-title" itemprop="name headline">星途项目app UI设计复盘</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2025-04-30T16:20:32.000Z" title="发表于 2025-04-30 16:20:32">2025-04-30</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-08-20T01:35:25.907Z" title="更新于 2025-08-20 01:35:25">2025-08-20</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">1.4k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="星途项目app UI设计复盘"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为山东 济南"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>山东 济南</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/starway.png"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope="" itemtype="http://leoblog.cc/posts/23917.html"><header><a class="post-meta-categories" href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url">项目</a><a href="/tags/UI%E8%AE%BE%E8%AE%A1/" tabindex="-1" itemprop="url">UI设计</a><a href="/tags/%E9%A1%B9%E7%9B%AE/" tabindex="-1" itemprop="url">项目</a><a href="/tags/%E8%BD%AF%E4%BB%B6/" tabindex="-1" itemprop="url">软件</a><a href="/tags/%E5%A4%8D%E7%9B%98/" tabindex="-1" itemprop="url">复盘</a><h1 id="CrawlerTitle" itemprop="name headline">星途项目app UI设计复盘</h1><span itemprop="author" itemscope="" itemtype="http://schema.org/Person">LEO LENG</span><time itemprop="dateCreated datePublished" datetime="2025-04-30T16:20:32.000Z" title="发表于 2025-04-30 16:20:32">2025-04-30</time><time itemprop="dateCreated datePublished" datetime="2025-08-20T01:35:25.907Z" title="更新于 2025-08-20 01:35:25">2025-08-20</time></header><div id="postchat_postcontent"> <p>最后更新：2024年4月 | 版本：2.1.24</p>
+星途是一个主打露营的社交平台，旨在帮助用户发现和分享露营的乐趣。通过地图、筛选和用户分享，用户可以快速找到适合露营的地点。同时，星途还提供了创建活动、发布日记和记录旅程的功能，让用户能够与其他露营者互动和记录自己的露营经历，作为一个三年前的项目，我对其进行了一次文档复盘。
+<!-- 原始文档完整结构 -->
+<h2>一、背景</h2>
+<p>近年，露营作为一种融合自然体验与社交文化的生活方式，正在年轻人群体中迅速升温。相较于传统出行，露营更强调"自发组织""共建共享"与"深度陪伴"，也由此孕育出对线上组织与线下链接平台的新需求。然而，现有社交产品多以城市场景为主，缺乏对露营这种"时间密集+空间分散"的社交场景的细致支持。</p>
+
+<h2>二、产品定位与用户画像</h2>
+    <h3>1. 产品定位</h3>
+    <p>我们将星途定位为"露营社交平台"，强调它既有内容社区的结构，又具备工具型产品的效率。围绕三大场景模块构建：</p>
+    <ul>
+        <li>发现营地：通过地图、筛选与用户分享，快速找到适合露营的地点</li>
+        <li>发起同行：建立主题活动，如"一起去林间观星""亲子森林营"等</li>
+        <li>记录旅程：以图文 + GPS轨迹的形式，沉淀个人露营记忆，形成专属"露营地图"</li>
+    </ul>
+
+<h3>2. 用户画像细化</h3>
+    <table border="1">
+        <tbody><tr><th>用户类型</th><th>主要动机</th><th>典型行为</th></tr>
+        <tr><td>新手露营者</td><td>寻找安全靠谱的营地、跟队学习经验</td><td>浏览评论、报名公开活动</td></tr>
+        <tr><td>熟练玩家</td><td>发起露营组队、分享露营技巧</td><td>创建活动、发布图文日记</td></tr>
+        <tr><td>内容创作者</td><td>打造户外生活调性内容</td><td>拍摄、写文、建立个人主页</td></tr>
+        <tr><td>城市社恐青年</td><td>想尝试但不擅社交</td><td>加入低社交门槛的公开营</td></tr>
+    </tbody></table>
+
+<h2>三、功能架构与部分UI设计</h2>
+    <h3>信息架构（Information Architecture）</h3>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/681211ff37529.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+<h3 style="border-left: 4px solid #3b82f6; padding-left: 0.5rem;">首页（社交 + 推荐）</h3>
+
+<p><strong>长图瀑布流 · 分享用户笔记</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/6811f5f1ccc36.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+<p><strong>分类的内容信息发布</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/6811fa9395257.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+<p><strong>露营笔记流（内容流）</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/6811ff65cad4d.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+<p><strong>社区达人露营活动</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/681210889a693.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+<h3 style="border-left: 4px solid #3b82f6; padding-left: 0.5rem;">发现页（地图 + 标签筛选）</h3>
+
+<p><strong>营地地图视图</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/681207dc9c877.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+<p><strong>筛选功能：地理位置、营地类型、设施、热度</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/6811fff856ff5.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+<h3 style="border-left: 4px solid #3b82f6; padding-left: 0.5rem;">商城</h3>
+
+<p><strong>浏览商城首页</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/681200bf5630e.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+<p><strong>商品内详情页</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/68120e4d30528.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+<h3 style="border-left: 4px solid #3b82f6; padding-left: 0.5rem;">我的</h3>
+
+<p><strong>我的星途</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/6811f871b898d.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+<p><em>＊受限篇幅，仅展示部分功能与 UI 设计</em></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/30/6812118f4b92f.webp" style="width:100%; max-width:100%; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin:1rem 0;"></p>
+
+
+<h2>四、设计语言与界面风格</h2>
+    <h3>1. 品牌设计语言：自然 × 专业 × 连接感</h3>
+    <ul>
+        <li>主色调：星夜灰、帆布色，呼应露营中的典型色彩体验</li>
+        <li>元素风格：弱边框、柔光阴影、拟物渐变，强调"可亲近感"</li>
+        <li>字体与排版：正文用更人文友好的字体，简约一步到达</li>
+    </ul>
+
+<h3>2. 界面设计样例</h3>
+    <ul>
+        <li>首页推荐区瀑布流设计注重"图强文弱"</li> 
+        <li>地图页采用多层信息展示结构</li>
+    </ul>
+
+<h2>五、社交机制与信任设计</h2>
+    <h3>1. 活动信任机制</h3>
+    <ul>
+        <li>活动发起人必须绑定实名并展示"过往活动评分"</li>
+        <li>用户在完成活动后可对同行者评价，形成"露营信誉分"</li>
+        <li>陌生组队前可加入临时聊天群查看成员历史露营记录</li>
+    </ul>
+
+<h3>2. 松弛社交策略</h3>
+    <ul>
+        <li>支持"默契组队"：加入活动无需开启私聊</li>
+        <li>引入匿名活动报名（由发起人审核）</li>
+        <li>活动标签机制支持个性偏好匹配</li>
+    </ul>
+
+<h2>六、设计挑战与应对方案</h2>
+    <table border="1">
+        <tbody><tr><th>设计挑战</th><th>应对策略</th></tr>
+        <tr><td>场景分散，用户动线难统一</td><td>构建基于旅程的整合入口</td></tr>
+        <tr><td>地图数据真实性难以保障</td><td>用户生成+平台审核+营地主协作三位一体机制</td></tr>
+        <tr><td>露营社交可能被异化为"搭讪工具"</td><td>明确非陌聊导向、引入行为规范举报系统</td></tr>
+    </tbody></table>
+
+<h2>七、用户测试与优化反馈</h2>
+    <h3>1. 内测反馈数据摘要</h3>
+    <ul>
+        <li>60%的用户第一次使用即点击"附近活动"</li>
+        <li>发布图文日记功能使用率高，日均图文浏览达12.5篇</li>
+        <li>"地图筛选营地"功能被用户评价为"比其他平台方便"</li>
+    </ul>
+
+<h3>2. 用户声音摘录</h3>
+    <blockquote>
+        "第一次组队去露营，没想到真的有人来，还挺好聊的。"<br>
+        —— 来自广州的大学生内测用户
+    </blockquote>
+
+<h2>八、未来展望与产品迭代方向</h2>
+    <h3>1. 即将上线功能</h3>
+    <ul>
+        <li>活动保险接入，提升用户安全感</li>
+        <li>多人位置共享与活动轨迹生成</li>
+        <li>"星野身份"系统（专属勋章、成长记录）</li>
+    </ul>
+
+<h3>2. 中长期目标</h3>
+    <ul>
+        <li>引入营地商业合作（预订、营地周边服务）</li>
+        <li>开展"星途市集"计划</li>
+        <li>推出"星途电台"小功能</li>
+    </ul>
+
+<h2>九、复盘总结</h2>
+    <p>星途APP作为一个新兴的社交产品，面对的是一个正在迅速生长的生活方式社群。在整个设计与产品化过程中，我始终坚持「自然氛围 × 真实社交 × 内容记录」三位一体的设计理念，力求让数字产品真正服务于线下的真实体验。
+
+</p><p>这次版本的完成只是起点。真正的星途，不止于应用本身，更是一次又一次人与自然的连接尝试。在一次次帐篷支起和篝火升起的时刻里，用户才是这段旅程真正的主角</p><br> <footer><br>        <hr><br>        <p>星途产品团队 LEO LENG ©2025 完整保留所有内容节点</p><p></p>
+</footer></div></article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/touxiang.png" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/touxiang.png" title="头像" alt="头像"></a><div class="post-copyright__author_name">LEO LENG</div><div class="post-copyright__author_desc">技术分享与生活记录</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://leoblog.cc/posts/23917.html">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://leoblog.cc/posts/23917.html')">星途项目app UI设计复盘</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://pic.mikon.ink/i/2025/04/27/680e436979da9.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/27/680e436979da9.webp" alt="微信"></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://pic.mikon.ink/i/2025/04/27/680e43690d543.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.mikon.ink/i/2025/04/27/680e43690d543.webp" alt="支付宝"></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://leoblog.cc/posts/23917.html"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=星途项目app UI设计复盘&amp;url=http://leoblog.cc/posts/23917.html&amp;pic=/img/starway.png" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://leoblog.cc" target="_blank">Leo Blog</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/UI%E8%AE%BE%E8%AE%A1/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>UI设计<span class="tagsPageCount">4</span></a><a class="post-meta__box__tags" href="/tags/%E9%A1%B9%E7%9B%AE/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>项目<span class="tagsPageCount">2</span></a><a class="post-meta__box__tags" href="/tags/%E8%BD%AF%E4%BB%B6/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>软件<span class="tagsPageCount">2</span></a><a class="post-meta__box__tags" href="/tags/%E5%A4%8D%E7%9B%98/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>复盘<span class="tagsPageCount">1</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2025/08/20/68a4d8f7d924e.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/5685.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/Chronotick.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">关于时·刻APP的UI设计开发思路思考</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/posts/5685.html" title="关于时·刻APP的UI设计开发思路思考"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/Chronotick.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-04-30</div><div class="title">关于时·刻APP的UI设计开发思路思考</div></div></a></div><div><a href="/posts/11244.html" title="“Figma：作为设计师，我怎么看待它的优点与边界”"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2025/06/12/684a83240f42c.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-06-12</div><div class="title">“Figma：作为设计师，我怎么看待它的优点与边界”</div></div></a></div><div><a href="/posts/11243.html" title="设计：选择字体这件事到到底有多难？"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2025/06/03/683eae2e601ea.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-06-03</div><div class="title">设计：选择字体这件事到到底有多难？</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/touxiang.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://twikoo-magic.oss-cn-hangzhou.aliyuncs.com/QQ/shui.gif" alt="status"></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">你的知识，我的想法，一起分享。我们都在不断进步的路上，</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">一起愉快的交流吧！</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><h1 class="author-info__name">LEO LENG</h1><div class="author-info__desc">技术分享与生活记录</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/ocarinal" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://b23.tv/yoq3KPd" target="_blank" title="BiliBili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>公告</span></div><div class="announcement_content"><span>Hi，欢迎来到LEO BIOG</span><br> <span>如有问题欢迎在留言板留言，我会在这里分享我对技术的学习和探索。</span><br> <span>页面异常？尝试<kbd>Ctrl</kbd>+<kbd>F5</kbd></span><br> <span>如需联系我：<a href="mailto:sakagamiwork@outlook.com"><b>发送邮件</b></a></span> <div id="welcome-info"></div></div></div><div class="card-widget card-countdown"><div class="item-headline"><i></i><span></span></div><div class="item-content"><div class="cd-count-left">
+  <span class="cd-text">距离</span>
+  <span class="cd-name" id="eventName"></span>
+  <span class="cd-time" id="daysUntil"></span>
+  <span class="cd-date" id="eventDate"></span>
+</div>
+<div id="countRight" class="cd-count-right"></div>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">1.</span> <span class="toc-text">一、背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">2.</span> <span class="toc-text">二、产品定位与用户画像</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">2.1.</span> <span class="toc-text">1. 产品定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">2.2.</span> <span class="toc-text">2. 用户画像细化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">3.</span> <span class="toc-text">三、功能架构与部分UI设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">3.1.</span> <span class="toc-text">信息架构（Information Architecture）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">3.2.</span> <span class="toc-text">首页（社交 + 推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">3.3.</span> <span class="toc-text">发现页（地图 + 标签筛选）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">3.4.</span> <span class="toc-text">商城</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">3.5.</span> <span class="toc-text">我的</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">4.</span> <span class="toc-text">四、设计语言与界面风格</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">4.1.</span> <span class="toc-text">1. 品牌设计语言：自然 × 专业 × 连接感</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">4.2.</span> <span class="toc-text">2. 界面设计样例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">5.</span> <span class="toc-text">五、社交机制与信任设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">5.1.</span> <span class="toc-text">1. 活动信任机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">5.2.</span> <span class="toc-text">2. 松弛社交策略</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">6.</span> <span class="toc-text">六、设计挑战与应对方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">7.</span> <span class="toc-text">七、用户测试与优化反馈</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">7.1.</span> <span class="toc-text">1. 内测反馈数据摘要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">7.2.</span> <span class="toc-text">2. 用户声音摘录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">8.</span> <span class="toc-text">八、未来展望与产品迭代方向</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">8.1.</span> <span class="toc-text">1. 即将上线功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">8.2.</span> <span class="toc-text">2. 中长期目标</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#postchat_postcontent"><span class="toc-number">9.</span> <span class="toc-text">九、复盘总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/9999.html" title="连琪露诺都能看懂的Minecraft服务器开服指南"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2025/08/20/68a4d8f7d924e.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="连琪露诺都能看懂的Minecraft服务器开服指南"></a><div class="content"><a class="title" href="/posts/9999.html" title="连琪露诺都能看懂的Minecraft服务器开服指南">连琪露诺都能看懂的Minecraft服务器开服指南</a><time datetime="2025-08-20T02:28:23.000Z" title="发表于 2025-08-20 02:28:23">2025-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/11266.html" title="这次邮件模板调试流水账，模板，故事分享给大家，我提升自己。"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2025/07/02/6864652280fc6.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="这次邮件模板调试流水账，模板，故事分享给大家，我提升自己。"></a><div class="content"><a class="title" href="/posts/11266.html" title="这次邮件模板调试流水账，模板，故事分享给大家，我提升自己。">这次邮件模板调试流水账，模板，故事分享给大家，我提升自己。</a><time datetime="2025-07-02T03:37:12.000Z" title="发表于 2025-07-02 03:37:12">2025-07-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/11244.html" title="“Figma：作为设计师，我怎么看待它的优点与边界”"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2025/06/12/684a83240f42c.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="“Figma：作为设计师，我怎么看待它的优点与边界”"></a><div class="content"><a class="title" href="/posts/11244.html" title="“Figma：作为设计师，我怎么看待它的优点与边界”">“Figma：作为设计师，我怎么看待它的优点与边界”</a><time datetime="2025-06-12T13:47:57.000Z" title="发表于 2025-06-12 13:47:57">2025-06-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/11243.html" title="设计：选择字体这件事到到底有多难？"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2025/06/03/683eae2e601ea.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计：选择字体这件事到到底有多难？"></a><div class="content"><a class="title" href="/posts/11243.html" title="设计：选择字体这件事到到底有多难？">设计：选择字体这件事到到底有多难？</a><time datetime="2025-06-03T12:29:35.000Z" title="发表于 2025-06-03 12:29:35">2025-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/57571.html" title="社交网络停用三周后，我对「发声」这件事的看法"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/fasheng.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="社交网络停用三周后，我对「发声」这件事的看法"></a><div class="content"><a class="title" href="/posts/57571.html" title="社交网络停用三周后，我对「发声」这件事的看法">社交网络停用三周后，我对「发声」这件事的看法</a><time datetime="2025-05-29T21:00:00.000Z" title="发表于 2025-05-29 21:00:00">2025-05-29</time></div></div></div></div></div></div></div></main><!-- 只在文章页显示横栏--><div id="mortalcat-footer-bar"><div class="footer-logo"><div class="MortalCat"></div></div><div class="footer-bar-description">查看来自 LEO 的更多文章</div><a class="footer-bar-link" href="/archives/">文章总览</a></div><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:ljhgame@qq.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://weibo.com/u/5221772893" title="微博"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=61556960345032" title="facebook"><i class="anzhiyufont anzhiyu-icon-facebook1"></i></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/touxiang.png" size="50px"><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/ocarinal" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://b23.tv/yoq3KPd" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a><a class="deal_link" href="/copyright" title="CC"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="Netlify" target="_blank" rel="noopener" href="https://www.netlify.com/">Netlify</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">主题</div><div class="footer-links"><a class="footer-item" title="文档" target="_blank" rel="noopener" href="https://docs.anheyu.com/">文档</a><a class="footer-item" title="源码" target="_blank" rel="noopener" href="https://github.com/ocarinal/ocarinal.github.io">源码</a><a class="footer-item" title="更新日志" href="/update/">更新日志</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="友链文章" href="/fcircle/">友链文章</a><a class="footer-item" title="留言板" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies" href="/cookies/">Cookies</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">©2021 - 2025 By <a class="footer-bar-link" href="https://ocarinal.github.io/len.github.io/" title="LEO LENG" target="_blank">LEO LENG</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://icp.gov.moe/?keyword=20250598" title="萌ICP备20250598号">萌ICP备20250598号</a><a class="footer-bar-link cc" href="/copyright/" title="cc协议"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-by-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nc-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nd-line"></i></a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">34</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">3</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 所有文章</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 文章分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> TAG</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/music/?id=2259332459&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener" href="https://xc.leoblog.cc"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 光影等待</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/update/"><i class="anzhiyufont anzhiyu-icon-bolt faa-tada" style="font-size: 0.9em;"></i><span> 本站日志</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/CI-CD/" style="font-size: 0.88rem;">CI/CD<sup>1</sup></a><a href="/tags/GitHub-Actions/" style="font-size: 0.88rem;">GitHub Actions<sup>1</sup></a><a href="/tags/GitHub-Pages/" style="font-size: 0.88rem;">GitHub Pages<sup>1</sup></a><a href="/tags/Hexo/" style="font-size: 0.88rem;">Hexo<sup>2</sup></a><a href="/tags/UI%E8%AE%BE%E8%AE%A1/" style="font-size: 0.88rem;">UI设计<sup>4</sup></a><a href="/tags/%E4%BB%A3%E7%A0%81%E5%88%86%E4%BA%AB/" style="font-size: 0.88rem;">代码分享<sup>1</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 0.88rem;">博客<sup>1</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 0.88rem;">博客搭建<sup>1</sup></a><a href="/tags/%E5%A4%8D%E7%9B%98/" style="font-size: 0.88rem;">复盘<sup>1</sup></a><a href="/tags/%E5%AD%97%E4%BD%93%E8%AE%BE%E8%AE%A1/" style="font-size: 0.88rem;">字体设计<sup>1</sup></a><a href="/tags/%E5%AD%97%E4%BD%93%E9%80%89%E6%8B%A9/" style="font-size: 0.88rem;">字体选择<sup>1</sup></a><a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 0.88rem;">思考<sup>1</sup></a><a href="/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" style="font-size: 0.88rem;">技术分享<sup>1</sup></a><a href="/tags/%E6%95%88%E7%8E%87/" style="font-size: 0.88rem;">效率<sup>1</sup></a><a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.88rem;">教程<sup>2</sup></a><a href="/tags/%E6%96%B0%E6%89%8B%E7%BB%8F%E9%AA%8C/" style="font-size: 0.88rem;">新手经验<sup>1</sup></a><a href="/tags/%E6%97%A0%E7%BA%BF%E7%94%B5/" style="font-size: 0.88rem;">无线电<sup>1</sup></a><a href="/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/" style="font-size: 0.88rem;">时间管理<sup>1</sup></a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 0.88rem;">服务器<sup>1</sup></a><a href="/tags/%E6%A4%8D%E7%89%A9%E5%85%BB%E6%8A%A4/" style="font-size: 0.88rem;">植物养护<sup>1</sup></a><a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 0.88rem;">游戏<sup>1</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 0.88rem;">生活<sup>1</sup></a><a href="/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/" style="font-size: 0.88rem;">番茄工作法<sup>1</sup></a><a href="/tags/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C/" style="font-size: 0.88rem;">社交网络<sup>1</sup></a><a href="/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/" style="font-size: 0.88rem;">经验分享<sup>2</sup></a><a href="/tags/%E8%83%B6%E7%89%87%E6%91%84%E5%BD%B1/" style="font-size: 0.88rem;">胶片摄影<sup>1</sup></a><a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/" style="font-size: 0.88rem;">自动化部署<sup>1</sup></a><a href="/tags/%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/" style="font-size: 0.88rem;">自动部署<sup>1</sup></a><a href="/tags/%E8%AE%BE%E8%AE%A1/" style="font-size: 0.88rem;">设计<sup>1</sup></a><a href="/tags/%E8%AE%BE%E8%AE%A1%E7%BB%8F%E9%AA%8C/" style="font-size: 0.88rem;">设计经验<sup>2</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 0.88rem;">软件<sup>2</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" style="font-size: 0.88rem;">软件工具<sup>1</sup></a><a href="/tags/%E9%82%AE%E4%BB%B6%E6%A8%A1%E6%9D%BF/" style="font-size: 0.88rem;">邮件模板<sup>1</sup></a><a href="/tags/%E9%A1%B9%E7%9B%AE/" style="font-size: 0.88rem;">项目<sup>2</sup></a></div></div><hr></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><a id="switch-commentBarrage" href="javascript:anzhiyu.switchCommentBarrage();" title="开关弹幕"><i class="anzhiyufont anzhiyu-icon-danmu"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="2259332459" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div><hr><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://music.163.com/#/playlist?id=2259332459&amp;uct2=U2FsdGVkX1+rp/i4dkewReVjYe1PNTZ9dGsqBRR7InM=&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async="" src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎你来到Leo Blog`,
+    `                                                                              
+        _|         _|_|_|_|     _|_|         _|_|_|     _|_|_|     _|_|       _|_|_|  
+        _|         _|         _|    _|       _|    _|     _|     _|    _|   _|        
+        _|         _|_|_|     _|    _|       _|_|_|       _|     _|    _|   _|  _|_|  
+        _|         _|         _|    _|       _|    _|     _|     _|    _|   _|    _|  
+        _|_|_|_|   _|_|_|_|     _|_|         _|_|_|     _|_|_|     _|_|       _|_|_|  
+    `,
+    `玻璃晴朗，橘子辉煌。`,
+    "©2021-2025 By LENG LEO | THEME:ANZHIYU ",      "已上线",dnum,"天",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🙂`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by ANZHIYU %c 你正在访问 LEO LENG 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已经按F12打开了控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中，请尊重开源协议.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async="" src="/anzhiyu/random.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://peppy-centaur-262981.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.42/dist/twikoo.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://peppy-centaur-262981.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"><script async="" src="/js/anzhiyu/comment_barrage.js"></script></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://peppy-centaur-262981.netlify.app/.netlify/functions/twikoo',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.42/dist/twikoo.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async="" data-pjax="" src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "";
+</script><script async="" data-pjax="" src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script src="/static/countdown.js"></script><script src="card-welcome.js"></script><script src="gold.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div>
+    <link rel="stylesheet" href="/css/postchat-summary.css">
+    <script>
+        let tianliGPT_key = 'f01500694a77e2b6430d';
+        let tianliGPT_postSelector = '#postchat_postcontent';
+        let tianliGPT_Title = '领结兔给文章做了摘要:';
+        let tianliGPT_postURL = '/^https?:\/\/[^/]+\/posts\//';
+        let tianliGPT_blacklist = '';
+        let tianliGPT_wordLimit = '1000';
+        let tianliGPT_typingAnimate = true;
+        let tianliGPT_theme = 'default';
+        var postChatConfig = {
+          backgroundColor: "#3e86f6",
+          bottom: "16px",
+          left: "16px",
+          fill: "#FFFFFF",
+          width: "44px",
+          frameWidth: "375px",
+          frameHeight: "600px",
+          defaultInput: false,
+          upLoadWeb: false,
+          showInviteLink: false,
+          userTitle: "PostChat",
+          userDesc: "如果你对网站的内容有任何疑问，可以来问我哦～",
+          addButton: false,
+          beginningText: "这篇文章介绍了",
+          userIcon: "https://ai.tianli0.top/static/img/PostChat.webp",
+          userMode: "magic",
+          defaultChatQuestions: ["你好","你是谁"],
+          defaultSearchQuestions: ["视频压缩","设计"]
+        };
+    </script>
+    <script data-postchat_key="f01500694a77e2b6430d" src="https://ai.tianli0.top/static/public/tianli_gpt.min.js"></script>
+  </body></html>
